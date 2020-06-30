@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 當用float時可以讓物件脫離平面浮起來造成文繞圖效果/column橫排，但同時也脫離區塊，可以考慮clear: both; -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    
+*{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    width: 960px;
+    /* height: fit-content; */
+    background-color:blanchedalmond;
+    margin: auto;
+}
+.col
+{   
+    width: 280px;
+    /* height: 200px; */
+    background-color: #ccc;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+.csss
+{
+    clear: both;
+}
+.img
+{
+    width: 100%;
+}
+</style>
+
+
+
+</head>
+<body>
+    <div class="container">
+
+     <div class="col">
+   
+        <img src="https://fakeimg.pl/250x150/">
+        <h3>title</h3>
+        <p>ipsum dolor sit amet consectetur adipisicing elit. Perferendis atque ratione obcaecati ipsum, quo iusto modi nam, officiis voluptate tempora explicabo. Ullam nulla ipsa ut repellat debitis qui omnis nihil?</p> 
+     </div>
+     <div class="col">
+        
+        <img src="https://fakeimg.pl/250x150/">
+        <h3>title</h3>
+        <p>ipsum dolor sit amet consectetur adipisicing elit. Perferendis atque ratione obcaecati ipsum, quo iusto modi nam, officiis voluptate tempora explicabo. Ullam nulla ipsa ut repellat debitis qui omnis nihil?</p> 
+     </div>
+     <div class="col">
+      
+        <img src="https://fakeimg.pl/250x150/">
+        <h3>title</h3>
+        <p>ipsum dolor sit amet consectetur adipisicing elit. Perferendis atque ratione obcaecati ipsum, quo iusto modi nam, officiis voluptate tempora explicabo. Ullam nulla ipsa ut repellat debitis qui omnis nihil?</p> 
+     </div>
+     <div class="csss">
+   
+     </div>
+  
+
+
+    </div>
+    
+    
+</body>
+</html>

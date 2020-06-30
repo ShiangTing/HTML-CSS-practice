@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- 
+note:優先權與基本selector
+1.inline style是不推薦的寫法 
+2.先讀取html 再執行CSS 和JS
+3.選取器優先權 id>class>tag 若都是class後面會蓋掉前面
+4.準則:明確性越高 越先被選取(優先權越高)
+
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            color: red;
+            background-color: seagreen;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h1
+        {
+            font-size: 40px;
+            color: orange;
+        }
+
+        .info
+        {
+            color: black;
+            background-color: palevioletred;
+        }
+        .title
+        {
+            color: purple;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #para
+        {
+            color: salmon;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .info2
+        {
+            color: sienna;
+
+        }
+        /* p.info2#para
+        {
+            color: tomato;
+            background-color: whitesmoke;
+        }  */
+        p#para
+        {
+            color: yellowgreen;
+            background-color: wheat;
+        }
+        p.info2
+        {
+            color: turquoise;
+            background-color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+
+    <h1 class="title">title</h1>
+    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, neque dignissimos. Aliquam nihil incidunt corrupti iusto, labore est magnam enim eos vitae. Officia provident, rerum consectetur commodi reiciendis quod suscipit.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias qui nostrum cum laudantium obcaecati debitis nemo, possimus quae, maxime neque laboriosam ducimus ut! Voluptas velit nobis maiores culpa officiis numquam?</p>
+
+    <h2>title</h2>
+    <p id="para" class="info2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cum a molestias fuga quisquam quae ad? Minima non assumenda blanditiis nihil consequatur illum aspernatur neque libero amet quibusdam. Eum, fugit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium ut totam, dolorum perspiciatis error sed autem vitae rem repudiandae nobis et a iste, odio quisquam quaerat illum nam culpa.</p>
+
+
+</body>
+</html>

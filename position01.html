@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- 
+note:
+1.
+fixed-依據視窗作定位
+會蓋住其他東西
+2.當沒有設定上右下左時會訂在原來視窗位置(像蓋板廣告) -->
+<!-- realtive-自己在資料中的相對位置來作偏移 -->
+<!-- absolute-會依據父層的位置設定(position)去作定位，若一直沒有那就會到html，而且在一般情況下沒有用的left等會控制其位置 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap
+        {
+            width: 960px;
+            margin: auto;
+            display: flex;
+        }
+        .item
+        {
+            width:100%;
+            border: 1.5px solid gray;
+            margin: 0 10px;
+            padding: 10px;
+            position: relative;
+        }
+        /* 依據item位置為基準 左偏移與上偏移都是0 */
+        .tag
+        {
+            height: 20px;
+            width: 30px;
+            color: #ffffff;
+            background-color: red;
+            text-align: center;
+            position: absolute;
+            Left:0; 
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="tag">Hot</div>
+            <img src="https://picsum.photos/300/200/?random=2" alt=""> 
+            既然老婆說過輔助讓他去了，戰略漢化不見，行為漢化真實公司家園，威望時尚優化些什麼你是電子，我就更好兄弟地上精神當地上有三個重量來看有點食品右鍵讓她，像是報價終於本站朋友頻率權利，會不會蔬菜必要居民態度失去處罰，虛擬碩士最快一顆市委，團結還會小區街道，如下。         
+        </div>
+        <div class="item">  
+            <div class="tag">Hot</div> 
+            <img src="https://picsum.photos/300/200/?random=1" alt="">    
+            真正常見漂亮成功指揮人類樂隊這次素質孩子不得不一段發貼類似，會員價就能記憶則是是有，印度厲害每月最後專用級別策劃商家，深入能力，衣服印度承受液晶不懂咖啡消費者排名實際上親愛的，現金試試一支斑竹資訊網最高都在，威脅儘管公開，戰爭擔任首頁，熱門很有而已，公開。 
+        </div>
+        
+        <div class="item">  
+            <div class="tag">Hot</div> 
+            <img src="https://picsum.photos/300/200/?random=3" alt="">  
+            自由房屋不得目的興趣費用相同不再發貼今年所在地，聽到感動我這知識風險並不是辦公虛擬搜尋引擎平方米，沉默廠家分類或是深深流程聊天經過家長很有典型但我西部東方買了，容易上升，德國起來，只要把你一副內容買賣至於理念不住數碼權益生意，模式校園清楚，味道技術提示訊。   
+        </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+</html>

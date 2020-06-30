@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- 
+    note:
+    flex-direction所排列方向是預設資料流向(由左至右 上至下)
+    可以加dir="rtl"
+    justify-content:主軸方向
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            height: 960px;
+            width: 960px;
+            background-color: darkgray;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            /* justify-content: center; */
+            align-items:flex-start;
+            align-content:flex-end;
+        }
+        .item{
+            width: 300px;
+            height: 100px;
+            font-size: 60px;
+          padding: 10px 10px 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .item1{background-color: blanchedalmond;}
+        .item2{background-color: blueviolet;}
+        .item3{background-color: chocolate;}
+        .item4{background-color:gold}
+        .item5{background-color:lightcoral}
+        .item6{background-color:mediumpurple}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </2iv>
+</body>
+</html>

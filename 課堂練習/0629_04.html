@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- note:
+盒模型
+padding 邊框線以內 內容跟文字的空間
+margin 物件與物件的距離 上下左右
+box sizing 盒子的寬高是指定給誰的 
+-content box border box(邊界到邊界)
+
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div
+        {
+            /* 這時物件width實際大小是120px */
+            width: 200px;
+            height: 250px;
+            background-color: #ccc;
+            border: 10px solid red;
+            /* 邊框線以內 內容跟文字的空間 */
+            padding: 20px;
+            /* 物件與物件的距離 上下左右 */
+             margin: 10px 20px; 
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>上次委員會，尷尬包括資本很大教師經濟發展針對電池風景提示穿著群發外國，不太一點。</div>
+
+</body>
+</html>

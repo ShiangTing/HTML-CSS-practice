@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+
+<!-- note:
+1.block-標籤獨自佔一個區塊，不會與其他標籤並排(具長寬)ex:div,p
+2.inline-可以與別人併排不具長寬ex:a
+3.inline-block-可以與別人併排，但又是一個區塊(可設定長寬) -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .menu{
+        background-color: coral;
+        text-align: center;
+        font-size: 0;
+    }
+    .menu a
+    {   
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        font-size: 16px;
+    }
+    .menu a:hover
+    {
+        background-color: black;
+    }
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+
+
+
+    </div>
+</body>
+</html>

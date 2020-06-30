@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- note:層的概念 
+
+1.css屬性中 文字屬性會繼承
+
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            color: #aaa;
+        }
+        .box
+        {
+            color: pink;
+        }
+        .info p{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, inventore!</p>  
+
+    </div>
+    <div class="info">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, delectus.</p>
+    </div>
+
+    <script type="javasciptts">
+
+        document.addEventListener("DOMContentLoaded", function() {
+            function createParagraph() {
+              let para = document.createElement('p');
+              para.textContent = 'You clicked the button!';
+              document.body.appendChild(para);
+            }
+          
+            const buttons = document.querySelectorAll('button');
+          
+            for(let i = 0; i < buttons.length ; i++) {
+              buttons[i].addEventListener('click', createParagraph);
+            }
+          });
+        </script>
+    
+</body>
+</html>
+

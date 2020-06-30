@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html,body{
+        margin: 0px;
+        /* padding: 0px; */
+    }
+   .header{
+       width: 100%;
+       /* height:px; */
+       background-color: black;
+        display: flex;
+       justify-content: space-around;
+       align-items: center;
+        margin: 0px;
+        padding: -15px;
+
+   }
+   .icon {
+       color: white;
+       margin: 5px;
+       padding: 10px 0px 10px 0px;
+   }
+   .header .phone{
+       color: white;
+       text-decoration: none;
+       font-family: 'Lato', sans-serif;
+   }
+   .navbar{
+        display: flex;
+        justify-content: space-around;
+
+        align-items: center;
+        
+        width: 100%;
+        background-color: white;
+        height: 100px;
+        /* padding: 10px; */
+
+   }
+   .navbar .logo{
+    display: flex;
+   }
+   .navbar .logo h2{
+       font-weight: 700;
+       font-size: 26px;
+       font-family:'Lato',sans-serif;
+   }
+   .donate{
+       border: 2px solid orange;
+      padding: 18px 35px;
+      font-size: 13px;
+      color: orange;
+      font-family: 'Lato',sans-serif;
+   }
+   .donate:hover{
+       background-color:powderblue;
+       color: white;
+       border: transparent;
+   }
+
+   .nav_content a{
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+    font-family: 'Lato',sans-serif;
+    padding: 10px 30px;
+    text-align: center;
+   }
+   .container
+   {width: 100%; 
+    position: relative;
+    }
+   .container .commericial {
+      /* background-image: url(../課堂練習/assets/asset9.png); */
+      background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      width: 100%;
+      margin: auto;
+      height: 600px;
+      box-sizing: border-box;
+  }
+  .commer-text{
+    padding:100px 100px ;
+
+  }
+  .commer-text .line1{
+      font-size: 34px;
+      color: #535353;
+      font-family:'Lato',sans-serif;
+      padding: 0px;
+      line-height: 0px;
+      /* z-index: 2; */
+
+  }
+  .commer-text .line2{
+      color: #7ABEE9;
+      font-size: 80px;
+      font-family: 'Lato',sans-serif;
+      padding: 0px;
+      line-height: 0px;
+      /* z-index: 2; */
+  }
+  .commer-text .line3{
+    color: #535353;
+    font-family:'Lato',sans-serif;
+    font-size: 17px;
+    line-height: 0px;
+  }
+  .button button{
+    padding:30px 54px ; 
+    margin-left: 100px;
+    margin-bottom: 50px;
+    position: relative;
+    color: #ffffff;
+    background-color: #FF9933;
+    border-radius: 2px;
+    border: 1px transparent;
+    width: fit-content;
+    line-height: 0px;
+    font-size: 17px;
+  }
+
+  .about{
+      display: flex;
+      /* flex-direction: column; */
+      justify-content: space-around;
+      align-items: center;
+      align-content:center;
+      padding-top: 90px;
+      width: 100%;
+  }
+  .about .pic1{
+      display: flex;
+  }
+  .about  img{
+    display: inline-block;
+    margin: 0px 150px;
+    width: 80%;
+    margin: auto;
+    padding-left: 15px;
+  }
+  .about .abouttext{
+    display: inline-block;
+    width: 50%;
+  }
+  .abouttext h2{
+      font-size: 60px;
+      color: #535353;
+      font-family: 'Lato',sans-serif;
+  }
+  .abouttext h3{
+      font-size: 30px;
+      color: #7ABEE9;
+      font-family: 'Lato',sans-serif;
+  }
+  .abouttext .content-1 , .abouttext .content-2{
+    font-size: 14px;
+      color: #8D8D8D;
+      font-family: 'Lato',sans-serif;
+  }
+  .link , .volun-btn{
+      background-color: #FF9933;
+      width: fit-content;
+      border-radius: 2px;
+      padding: 20px 54px;
+      margin-top: 30px;
+      
+  }
+  .link a ,.volun-btn a{
+    font-family: 'Lato',sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  .wrap0{
+      margin: 0px 8% ;
+  }
+  .wrap1{
+      margin: 0px 8%; 
+      display: flex;
+  }
+  .wrap2{
+      margin: 0px 11.2%; 
+      display: flex;
+  }
+
+ .joinsection{
+ 
+    width: 100%;
+    background-color: #F9F9F9;
+    padding: 60px 0px;
+    justify-content: space-around;
+}
+.board-1{
+    text-align: center;
+    justify-content: space-around;
+}
+.board-1 h2{
+    font-size: 50px;
+    font-family: 'Lato' ,sans-serif;
+    color: #535353;
+    line-height: 1.0;
+    letter-spacing: 0px;
+    margin: 0px;
+}
+.pic2{
+    justify-content: space-around;
+}
+.board-1 p{
+    font-size: 30px;
+    color: #7abee9;
+    font-family: 'Lato' ,sans-serif;
+    line-height: 1.5;
+}
+
+.pic2 .p1  {
+    margin-left:60px;
+    position: relative;
+}
+.pic2 .p2{
+    margin-right: 0px;
+    margin-left: 20px;
+    position: relative;
+}
+.pic2 .p3{
+    /* margin-right: 0px; */
+    margin-left: 20px;
+    position: relative;
+}
+
+.pic2 .word-1{
+    display: inline-block;
+    position: absolute;
+    font-family: 'Lato' ,sans-serif;
+    color:#ffffff;
+    font-size: 34px;
+   right: 120px;
+   bottom: 60px;
+}
+
+.pic2 .word-2{
+    display: inline-block;
+    position: absolute;
+    font-family: 'Lato' ,sans-serif;
+    color:#ffffff;
+    font-size: 34px;
+    right: 140px;
+   bottom: 60px;
+}
+
+.pic2 .word-3{
+    display: inline-block;
+    position: absolute;
+    font-family: 'Lato' ,sans-serif;
+    color:#ffffff;
+    font-size: 34px;
+    right: 130px;
+   bottom: 60px;
+}
+.bigboard{
+    padding: 90px 0px;
+    /* display: flex;
+   flex: wrap; */
+}
+
+
+
+.bigboard .board-left{
+    padding-right: 60px;
+    margin-top: -45px;
+}
+.board-left h1{
+    font-family: 'Lato' ,sans-serif;
+    color: #535353;
+    font-size: 50px;
+    text-align: right;
+    margin-right: 36px;
+}
+
+.board-right p{
+    font-family: 'Lato' ,sans-serif;
+    color: #8D8D8D;
+    font-size: 14px;
+}
+.board-bottom{
+  position: relative;
+  margin-left: 37px;
+}  
+.content1 h2{
+    position: absolute;
+    left:30%;
+    bottom: 60%;
+    text-align: center;
+    font-family: 'Lato' ,sans-serif;
+    font-size: 50px;
+    color: #535355;
+}
+.content2 .sen-1{
+    position: absolute;
+    text-align: center;
+    color:#7abee9;
+    font-size: 60px;
+    line-height:1.5;
+    font-family: 'Lato' ,sans-serif;
+    left:23%;
+    bottom: 36%;
+
+}
+.content2 .sen-2{
+    position: absolute;
+    text-align: center;
+    color:#535355;
+    font-size: 24px;
+    font-family: 'Lato' ,sans-serif;
+    left:40%;
+    bottom: 40%;
+
+}
+.banner-btn1  {
+    background-color: #FF9933;
+    position: absolute;
+      width: fit-content;
+      border-radius: 2px;
+      padding: 20px 54px;
+      /* margin-top: 30px; */
+      left:30%;
+    bottom: 25%;
+  }
+.banner-btn1 a ,.banner-btn2 a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Lato',sans-serif;
+
+}
+.banner-btn2{
+    background-color: #FF9933;
+    position: absolute;
+      width: fit-content;
+      border-radius: 2px;
+      padding: 20px 54px;
+      left:48%;
+    bottom: 25%;
+}
+.dog-1{
+    padding: 90px 0px;
+    height: 40%;
+}
+.dog-pic img{
+    width: 100%;
+    /* height: 40%; */
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="header">
+        <!-- <span class="fa"></span>
+        <div class="phone">
+            <a href="#" >Toll-free:(123)-7890</a>
+        </div> -->
+        <p>
+            <span class="moto">
+                <span class="fa"></span>
+            </span>
+            "Toll-free:"
+            <a href="#" class="phone">(123)-7890</a>
+
+        </p>
+        <div class="icon">
+            <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#"><img src="assets/asset0.png"></a>
+            <h2>Anilove</h2>
+        </div>
+       
+        <nav class="nav_content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">News</a>
+            <a href="#">Contacts</a>
+        </nav>
+
+        <div class="donate">Donate Now!</div>
+
+
+    </div>
+    <div class="container">
+        <div class="commericial" style="background-image: url(../課堂練習/assets/asset9.png);">
+            <!-- <a href="/"><img src="assets/asset9.png" alt=""></a>
+         -->
+            <div class="wrap0">
+            <div class="commer-text">
+            <p class="line1">Animal Needs</p>
+            <p class="line2">YOUR HELP!</p>
+            <p class="line3">Your can chip in with money & effort!</p>
+            </div>
+            <div class="button">
+                <button name="submit" class="btn-1">
+                    <span class="text1">Donate Now</span>
+                </button>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+    <div class="about">
+        <div class="wrap1">
+        <div class="pic1"><img src="assets/asset1.png" alt=""></div>
+        <div class="abouttext">
+            <h2>About Us</h2>
+            <h3>What Makes Us Care About Pets?</h3>
+            <p class="content-1">If it wasn’t for our founder’s childhood spent on a ranch in northern Texas, surrounded by domestic animals and pets all the time till she went to college – there might have been no Anilove animal shelter now. So as soon as she graduated with her Veterinary degree 12 years ago, she already knew what she will be doing for a living.</p>
+            <p class="content-2">All in all, with thousands of animals saved off the streets and cared for every year, we hope to encourage much more pet adoptions to happen!</p>
+            <div class="link">
+                <a href="#">LEARN MORE</a>
+            </div>
+
+        </div>
+        </div>
+
+
+    </div>
+    <div class="joinsection">
+        <div class="wrap0">
+            <div class="board-1">
+                <h2>How You Can Help</h2>
+                <p>There Are Countless Ways You Can Join In & Help Us!</p>
+            </div>
+            <div class="pic2">
+                <span class="p1"><img src="assets/asset10.png" alt="">
+                    <h3 class="word-1">Volunteer</h3>
+                </span>
+                
+                <span class="p2"><img src="assets/asset11.png" alt="">
+                    <h3 class="word-2">Adopt</h3> 
+                </span> 
+               
+                <span class="p3"><img src="assets/asset12.png" alt="">
+                    <h3 class="word-3">Sponsor</h3> 
+                </span>
+                
+             </div>
+        </div>
+    </div>
+    <div class="bigboard">
+        <div class="wrap2">
+            <div class="board-left">
+                <h1>Volunteer to SaveAnimals Now!</h1>
+                <span class="">
+                    <img src="assets/asset2.jpg" alt="">
+                </span>
+            </div>
+            <div class="board-right">
+                <span class=""><img src="assets/asset3.jpg" alt="">
+                </span>
+                <p>With so many pets less fortunate than your cat and dog, there’s always something you can do about it!</p>
+                <div class="volun-btn">
+                <a href="#">VOLUNTEER</a>
+                </div>
+            </div>
+           
+         
+
+
+
+
+        </div>
+
+    </div>
+    <div class="board-banner">
+        <div class="wrap0">
+         <div class="board-bottom" >
+            <a href="/"><img src="assets/asset13.jpg" alt=""></a> 
+            <div class="content1">
+                <h2>Upcoming Events</h2>
+            </div>
+        
+            <div class="content2">
+                 <p class="sen-1">Kennel Training Class</p>
+                 <p class="sen-2">FR, June 11th</p>
+             </div>
+            <div class="banner-btn1">
+                 <a href="#">DETAILS</a>
+            </div>
+            <div class="banner-btn2">
+                 <a href="#">VIEW ALL</a>
+             </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="dog-1">
+       <div class="dog-pic">
+        <img src="assets/asset15.png" alt="">
+        </div>
+    </div>
+    <div class="video">
+        <div class="wrap0">
+            <div class="title">
+                <h2></h2>
+                <p></p>
+            </div>
+            <div class="content-video"></div>
+            <div class="side">
+                <div class="side-right"></div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+    <div class="collect"></div>
+    <div class="space"></div>
+    <div class="piccollect"></div>
+
+    <footer class="foo-anilove"></footer>
+
+
+</body>
+</html>

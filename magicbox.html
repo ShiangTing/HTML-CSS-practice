@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- note:box所控制的是width要指定給誰
+content-box:內容物之寬度
+border-box:邊框到邊框的寬度 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .wrap
+    {   
+        width: 960px;
+        margin: auto;
+        background-color:cornsilk;
+
+    }
+    .item{
+        width: 300px;
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        background: #ffffff;
+        box-sizing: border-box;
+        border: 3px solid #aaaaaa;
+    }
+
+    .clearfix
+    {
+        width: 100%;
+        clear: both;
+    }
+</style>
+
+
+</head>
+<body>
+    <div class="wrap">
+       <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem cumque hic, perspiciatis quas nulla adipisci. Esse praesentium eum quis? Sed ipsa distinctio possimus facilis facere est veritatis odit error deserunt?</div>
+      
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequuntur dolore dolor natus quis commodi eos ullam pariatur vero cum, repellendus et quo harum mollitia quibusdam modi consectetur incidunt atque.</div>
+      
+       <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor autem, laudantium, aliquam voluptatibus iste sapiente deserunt aut repudiandae magnam id similique laboriosam. Quas maxime eum adipisci, totam in odit id.</div>
+        <div class="clearfix"></div>
+    </div>
+</body>
+</html>
