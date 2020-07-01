@@ -290,19 +290,27 @@
     right: 130px;
    bottom: 60px;
 }
-.bigboard{
+
+
+.bigboard2{
+    width: 100%;
     padding: 90px 0px;
-    /* display: flex;
-   flex: wrap; */
+    justify-content: space-between;
+    margin: auto;
+}
+.bigboard2 .board-left2{
+    width: 45%;
+    flex-direction: column;
+    margin: 0px 50px 50px 50px;
+}
+.bigboard2 .board-right2{
+    width: 55%;
+    flex-direction: column;
+    margin: 0px 50px 50px 50px;
 }
 
 
-
-.bigboard .board-left{
-    padding-right: 60px;
-    margin-top: -45px;
-}
-.board-left h1{
+.board-left2 h1{
     font-family: 'Lato' ,sans-serif;
     color: #535353;
     font-size: 50px;
@@ -310,7 +318,7 @@
     margin-right: 36px;
 }
 
-.board-right p{
+.board-right2 p{
     font-family: 'Lato' ,sans-serif;
     color: #8D8D8D;
     font-size: 14px;
@@ -422,7 +430,7 @@ position: absolute;
     bottom: 260px;
 }
 
-.test1{
+.cat{
     display: inline-block;
 }
 .context-1{
@@ -482,8 +490,11 @@ height: 350px;
 }
 .container1{
     position: relative;
-    padding: 50px;
-    margin: 150px 0px;
+    /* padding: 50px; */
+    padding-top: 180px;
+    justify-content: center;
+ 
+    margin: auto;
     display: flex;
    
 }
@@ -590,14 +601,43 @@ height: 350px;
     font-size: 30px;
     color: #7ABEE9
 }
-
-/* p.p2{
-    font-family: sans-serif;
+.pic01{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+   
+}
+.test0, .test1 ,.test2{
+    /* z-index: ; */
+    padding: 10px 18px;
+    position: relative;
+}
+.word-4, .word-5,.word-6{
+    font-size: 36px;
     color: #ffffff;
-    font-size: 16px;
-    text-decoration: none;
-} */
-/* .address{display:inline-block;} */
+    font-family: 'Lato',sans-serif;
+    position: absolute;
+    bottom: 90px;
+    left: 130px;
+}
+
+.word-4:hover,.word-5:hover ,.word-6:hover{
+    filter: brightness(120%);
+   
+    color: orange;
+ 
+}
+.test0:hover, .test1:hover, .test2:hover{
+    filter: brightness(35%);
+}
+
+.wraptest{
+    margin: 0 8%;
+    display: flex;
+}
+.board-right2{
+    display: flex;
+}
 
 
 </style>
@@ -686,49 +726,49 @@ height: 350px;
 
 
     </div>
+    
     <div class="joinsection">
         <div class="wrap0">
             <div class="board-1">
                 <h2>How You Can Help</h2>
                 <p>There Are Countless Ways You Can Join In & Help Us!</p>
             </div>
-            <div class="pic2">
-                <span class="p1"><img src="assets/asset10.png" alt="">
-                    <h3 class="word-1">Volunteer</h3>
-                </span>
-                
-                <span class="p2"><img src="assets/asset11.png" alt="">
-                    <h3 class="word-2">Adopt</h3> 
-                </span> 
-               
-                <span class="p3"><img src="assets/asset12.png" alt="">
-                    <h3 class="word-3">Sponsor</h3> 
-                </span>
+            <div class="pic01">
+              <div class="test0">
+                  <img src="assets/asset10.png" alt="">
+                  <a href="#"><h3 class="word-4">Volunteer</h3></a>
+              </div>
+              <div class="test1">
+                  <img src="assets/asset11.png" alt="">
+                  <a href="#"><h3 class="word-5">Adopt</h3></a>
+              </div>
+              <div class="test2">
+                  <img src="assets/asset12.png" alt="">
+                   <a href="#"><h3 class="word-6">Sponsor</h3></a>
+              </div>
                 
              </div>
         </div>
     </div>
-    <div class="bigboard">
-        <div class="wrap2">
-            <div class="board-left">
+
+    <div class="bigboard2">
+        <div class="wraptest">
+            <div class="board-left2">
+                <div class="">
                 <h1>Volunteer to SaveAnimals Now!</h1>
-                <span class="">
+                
                     <img src="assets/asset2.jpg" alt="">
-                </span>
+                </div>
             </div>
-            <div class="board-right">
-                <span class=""><img src="assets/asset3.jpg" alt="">
-                </span>
+            <div class="board-right2">
+                <div class=""><img src="assets/asset3.jpg" alt="">
+                
                 <p>With so many pets less fortunate than your cat and dog, there’s always something you can do about it!</p>
+                 </div>
                 <div class="volun-btn">
                 <a href="#">VOLUNTEER</a>
                 </div>
             </div>
-           
-         
-
-
-
 
         </div>
 
@@ -771,7 +811,7 @@ height: 350px;
             </div>
             <div class="side">
                 <span class="side-right">
-                    <div class="test1">
+                    <div class="cat">
                     <img src="assets/asset16.png" alt="">
                     <div class="head-pic1">
                         <img src="assets/mt-1614-content-img11.png" alt="">
