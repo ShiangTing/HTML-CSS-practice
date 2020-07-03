@@ -39,10 +39,12 @@
             color: #ffffff;
         }
 
-        /* .text {
-            font-family: 'Lato', sans-serif;
-        } */
-
+ 
+        .background{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         .header {
             width: 100%;
             background-color: black;
@@ -169,27 +171,13 @@
             background-color: #7ABEE9;
             transition: .3s;
         }
-        /* 準備刪除------ */
 
-        .link:hover,
-        .volun-btn:hover {
-            background-color: black;
-            transition: .3s;
-        }
-
-        .banner-btn1:hover,
-        .banner-btn2:hover {
-            background-color: #7ABEE9;
-            transition: .3s;
-        }
-        /* ---------- */
         .button  {
             margin-top: 50px;
         }
 
         .about {
             padding-top: 90px;
-            /* width: 100%; */
         }
 
         .about .pic1 {
@@ -239,16 +227,6 @@
             margin: 0px 8%;
         }
 
-        .wrap2 {
-            margin: 0px 11.2%;
-            display: flex;
-        }
-
-        .wrap3 {
-            margin: 0px 11.2%;
-
-        }
-
         .join {
 
             /* width: 100%; */
@@ -271,102 +249,38 @@
             margin: 0px;
         }
 
-        .pic2 {
-            justify-content: space-around;
-        }
 
         .board-1 p {
             font-size: 30px;
             color: #7abee9;
-            font-family: 'Lato', sans-serif;
             line-height: 1.5;
         }
 
-        .pic2 .p1 {
-            margin-left: 60px;
-            position: relative;
+        .bigboard {
+            padding: 90px 0px;  
         }
 
-        .pic2 .p2 {
-            margin-right: 0px;
-            margin-left: 20px;
-            position: relative;
-        }
-
-        .pic2 .p3 {
-            /* margin-right: 0px; */
-            margin-left: 20px;
-            position: relative;
-        }
-
-        .pic2 .p1 img:hover,
-        .pic2 .p2 img:hover,
-        .pic2 .p3 img:hover {
-            filter: brightness(35%);
-            transition: .5s;
-        }
-
-        .pic2 .word-1 {
-            display: inline-block;
-            position: absolute;
-            font-family: 'Lato', sans-serif;
-            color: #ffffff;
-            font-size: 34px;
-            right: 120px;
-            bottom: 60px;
-        }
-
-        .pic2 .word-2 {
-            display: inline-block;
-            position: absolute;
-            font-family: 'Lato', sans-serif;
-            color: #ffffff;
-            font-size: 34px;
-            right: 140px;
-            bottom: 60px;
-        }
-
-        .pic2 .word-3 {
-            display: inline-block;
-            position: absolute;
-            font-family: 'Lato', sans-serif;
-            color: #ffffff;
-            font-size: 34px;
-            right: 130px;
-            bottom: 60px;
-        }
-
-
-        .bigboard2 {
-            width: 1200px;
-            padding: 90px 0px;
-            justify-content: space-between;
-            margin: auto;
-        }
-
-        .bigboard2 .board-left2 {
+        .bigboard .board-left {
             width: 45%;
             flex-direction: column;
-            margin: 0px 60px 50px 40px;
+            margin: 0px 60px 50px 20px;
         }
 
-        .bigboard2 .board-right2 {
+        .bigboard .board-right {
             width: 55%;
             flex-direction: column;
-            margin: 0px 50px 50px 20px;
+            margin: 50px 50px 50px 40px;
         }
 
 
-        .board-left2 h1 {
-            font-family: 'Lato', sans-serif;
+        .board-left h1 {
             color: #535353;
             font-size: 50px;
             text-align: right;
             margin-right: 36px;
         }
 
-        .board-right2 p {
-            font-family: 'Lato', sans-serif;
+        .board-right p {
             color: #8D8D8D;
             font-size: 14px;
         }
@@ -377,145 +291,101 @@
         }
 
         .content1 h2 {
-            position: absolute;
-            left: 30%;
-            bottom: 60%;
-            text-align: center;
-            font-family: 'Lato', sans-serif;
             font-size: 50px;
             color: #535355;
         }
 
         .content2 .sen-1 {
-            position: absolute;
-            text-align: center;
             color: #7abee9;
             font-size: 60px;
-            line-height: 1.5;
-            font-family: 'Lato', sans-serif;
-            left: 23%;
-            bottom: 36%;
 
         }
 
         .content2 .sen-2 {
-            position: absolute;
-            text-align: center;
             color: #535355;
             font-size: 24px;
-            font-family: 'Lato', sans-serif;
-            left: 40%;
-            bottom: 40%;
 
-        }
-
-        .banner-btn1 {
-            background-color: #FF9933;
-            position: absolute;
-            width: fit-content;
-            border-radius: 2px;
-            padding: 20px 54px;
-            /* margin-top: 30px; */
-            left: 30%;
-            bottom: 25%;
         }
 
         .banner-btn1 a,
         .banner-btn2 a {
             color: #ffffff;
             text-decoration: none;
-            font-family: 'Lato', sans-serif;
-
+            line-height: 1;
         }
 
-        .banner-btn2 {
-            background-color: #FF9933;
-            position: absolute;
-            width: fit-content;
-            border-radius: 2px;
-            padding: 20px 54px;
-            left: 48%;
-            bottom: 25%;
-        }
 
         .dog-1 {
             padding: 90px 0px;
             height: 500px;
-            width: 100%;
-            /* z-index: 1; */
-            background-attachment: fixed
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
         }
-
-        /* .dog-pic img{
-    width: 100%;
-    /* height: 40%; */
 
         .video {
             padding: 90px 0px;
             background-color: #FDFDFD;
-            /* width: 100%; */
         }
 
-        .board-banner {
-            width: 1200px;
+        .board-banner {     
             padding: 0px 0px 90px 0px;
-            margin: auto;
+
         }
 
         .side {
-            width: 1200px;
-            margin: auto;
+            /* width: 1200px;
+            margin: auto; */
             padding-top: 20px;
+            display: flex;
 
         }
 
-        .side .side-right {
+        .side .image {
             position: relative;
-            padding-right: 10px;
-            /* z-index:-1; */
+            width: 50%;
+         
         }
-
-        .side .side-left {
-            position: relative;
-            padding-left: 14px;
+        
+        .head-pic1{
+            /* display: flex; */
+            /* position: absolute; */
+            border-radius: 50%;
+            
         }
 
         .head-pic1 img {
             position: absolute;
-
             border-radius: 50%;
             z-index: 1;
             bottom: 270px;
-            left: 220px;
+            left: 240px;
         }
 
         .head-pic2 img {
             position: absolute;
             border-radius: 50%;
-            left: 44%;
+            left: 250px;
             bottom: 260px;
         }
 
         .cat {
-            display: inline-block;
+
+            padding: 0 10px 0 10px
+        }
+        .context-text{
+            margin-top: -250px;
+            text-align: center;
         }
 
         .context-1 {
-            position: absolute;
-            bottom: 200px;
-            left: 170px;
-            font-family: sans-serif;
             color: #ffffff;
             font-size: 16px;
-            /* text-align: center; */
         }
 
         .context-2 {
-            position: absolute;
-            bottom: 110px;
-            left: 110px;
-            font-family: sans-serif;
-            text-align: center;
+
             color: #ffffff;
             font-size: 30px;
         }
@@ -526,8 +396,8 @@
             align-items: center;
             font-family: sans-serif;
             color: #ffffff;
-            bottom: 90px;
-            left: 70px;
+            bottom: 115px;
+            left: 55px;
         }
 
         .context-3 h2 {
@@ -572,7 +442,6 @@
 
         .container1 {
             position: relative;
-            /* padding: 50px; */
             padding-top: 180px;
             justify-content: center;
 
@@ -726,6 +595,7 @@
             display: flex;
         }
 
+        
         .text{
             position: absolute;
             color: #ffffff;
@@ -736,8 +606,7 @@
             bottom: 90px;
         }
 
-        .word-4
-        {
+        .word-4{
             left: 125px;
         }
         .word-5{
@@ -753,13 +622,7 @@
 
         .item:hover .cover{
             background-color: rgba(22, 22, 21, 0.5);
-        }
-        .wraptest {
-            display: flex;
-        }
-
-        .board-right2 {
-            display: flex;
+            transition: .5s;
         }
 
         .uprow {
@@ -792,6 +655,21 @@
             width: 372px;
             height: 502px;
             background-color: transparent;
+        }
+
+        .content-gp{
+            position: absolute;
+            justify-content: center;
+            text-align: center;
+            top: 20px;
+            left: 280px;
+            line-height: 0.5;
+
+        }
+        .banner-btn{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
         }
     </style>
 
@@ -849,7 +727,7 @@
                     <p class="line3">Your can chip in with money & effort!</p>
                     <div class="button">
                         <div class="btn-effect btn ">
-                            <span class="text1 text">Donate Now</span>
+                            <span class="text1">Donate Now</span>
                         </div>
                     </div>
                 </div>
@@ -872,7 +750,7 @@
                     ago, she already knew what she will be doing for a living.</p>
                 <p class="content">All in all, with thousands of animals saved off the streets and cared for every
                     year, we hope to encourage much more pet adoptions to happen!</p>
-                <div class="link btn">
+                <div class="link btn btn-effect">
                     <a href="#">LEARN MORE</a>
                 </div>
 
@@ -896,7 +774,6 @@
                   
                     <a href="#">
                         <h3 class="text word-4 wd-effect co-word">Volunteer</h3>
-
                     </a>
                    
                 </div>
@@ -919,22 +796,22 @@
         </div>
     </div>
 
-    <div class="bigboard2">
-        <div class="wraptest">
-            <div class="board-left2">
+    <div class="bigboard">
+        <div class="container">
+            <div class="board-left">
                 <div class="">
                     <h1>Volunteer to SaveAnimals Now!</h1>
 
                     <img src="assets/asset2.jpg" alt="">
                 </div>
             </div>
-            <div class="board-right2">
+            <div class="board-right">
                 <div class=""><img src="assets/asset3.jpg" alt="">
 
                     <p>With so many pets less fortunate than your cat and dog, there’s always something you can do about
                         it!</p>
                 </div>
-                <div class="volun-btn btn">
+                <div class="volun-btn btn btn-effect">
                     <a href="#">VOLUNTEER</a>
                 </div>
             </div>
@@ -943,34 +820,34 @@
 
     </div>
     <div class="board-banner">
-        <div class="wraptest">
+        <div class="container">
             <div class="board-bottom">
                 <a href="/"><img src="assets/asset13.jpg" alt=""></a>
-                <div class="content1">
-                    <h2>Upcoming Events</h2>
-                </div>
+                <div class="content-gp">
+                    <div class="content1">
+                        <h2>Upcoming Events</h2>
+                    </div>
 
-                <div class="content2">
-                    <p class="sen-1">Kennel Training Class</p>
-                    <p class="sen-2">FR, June 11th</p>
-                </div>
-                <div class="banner-btn1">
-                    <a href="#">DETAILS</a>
-                </div>
-                <div class="banner-btn2">
-                    <a href="#">VIEW ALL</a>
+                    <div class="content2">
+                        <p class="sen-1">Kennel Training Class</p>
+                        <p class="sen-2">FR, June 11th</p>
+                    </div>
+                    <div class="banner-btn">
+                        <div class="banner-btn1 btn btn-effectblue">
+                            <a href="#">DETAILS</a>
+                        </div>
+                        <div class="banner-btn2 btn btn-effectblue">
+                            <a href="#">VIEW ALL</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <div class="dog-1" style="background-image: url(../Practice/assets/asset15.png);">
-        <div class="dog-pic">
-            <!-- <img src="assets/asset15.png" alt=""> -->
-        </div>
-    </div>
+    <div class="dog-1" style="background-image: url(../Practice/assets/asset15.png);"></div>
     <div class="video">
-        <div class="wrap3">
+        <div class="wrap">
             <div class="title">
                 <h2>Latest News & Updates</h2>
                 <p>See a Video Review of Our Cutest Pets!</p>
@@ -981,27 +858,33 @@
                     allowfullscreen></iframe>
             </div>
             <div class="side">
-                <span class="side-right">
+                <div class="image">
                     <div class="cat">
                         <img src="assets/asset16.png" alt="">
                         <div class="head-pic1">
                             <img src="assets/mt-1614-content-img11.png" alt="">
+                            <div class="context-text">
+                            <h2 class="context-1">18 Sept, by Jennifer Moreno</h2>
+                            <p class="context-2">New Advancements in the <br>Veterinary Industry</p>
+                            </div>
                         </div>
-                        <h2 class="context-1">18 Sept, by Jennifer Moreno</h2>
-                        <p class="context-2">New Advancements in the <br>Veterinary Industry</p>
+                     
 
                     </div>
-                </span>
-                <span class="side-left">
-                    <img src="assets/asset17.png" alt="">
-                    <div class="head-pic2">
-                        <img src="assets/mt-1614-content-img12.png" alt="">
+                </div>
+                <div class="image">
+                    <div class="cat">
+                        <img src="assets/asset17.png" alt="">
+                        <div class="head-pic2">
+                            <img src="assets/mt-1614-content-img12.png" alt="">
+                            <span class="context-3">
+                                <h2>18 Sept, by Jennifer Moreno </h2>
+                                <p>Do Dogs Hate It When You Hug Them?</p>
+                            </span>
+                        </div>
+                       
                     </div>
-                    <span class="context-3">
-                        <h2>18 Sept, by Jennifer Moreno </h2>
-                        <p>Do Dogs Hate It When You Hug Them?</p>
-                    </span>
-                </span>
+                </div>
             </div>
 
 
@@ -1012,7 +895,7 @@
 
     </div>
     <div class="collect" style="background-image: url(../Practice/assets/asset18.png);">
-        <div class="wrap2">
+        <div class="container">
             <div class="container1">
                 <div class="reward1">
                     <span class="r-1"> <img src="assets/mt-1614-content-img16.jpg" alt=""></span>
