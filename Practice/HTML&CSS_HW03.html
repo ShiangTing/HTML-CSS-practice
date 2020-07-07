@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,353 +8,453 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <style>
-
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-      *{
-          list-style: none;
-          /* font-family: ; */
-         
+
+        * {
+            list-style: none;
+            /* font-family: ; */
+
         }
-        body{
-            font-family:"PT Sans", sans-serif;
+
+        body {
+            font-family: "PT Sans", sans-serif;
             font-size: 14px;
             color: #333333;
             letter-spacing: 0em;
 
         }
-        a{
+
+        a {
             text-decoration: none;
         }
-        .font{
+
+        .font {
             font-family: 'Pacifico', cursive;
         }
-        .text-color{
+
+        .text-color {
             color: white;
         }
-        .container{
+
+        .container {
             width: 1200px;
             margin: auto;
             display: flex;
         }
-        .bg{
+
+        .bg {
             height: 780px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
-        .title{
-            
+        .title {
+
             background-color: #679509;
             display: flex;
             align-items: center;
             justify-content: space-between;
-           height: 50px;
+            height: 50px;
         }
-        .breadcrumb{
+
+        .breadcrumb {
             display: flex;
-           
+
         }
-        .breadcrumb a{
+
+        .breadcrumb a {
             text-decoration: none;
             font-size: 12px;
             color: #f0f0f0;
             padding: 0 17px;
 
         }
-        ul.breadcrumb li +li::before{
+
+        ul.breadcrumb li+li::before {
             content: "|";
             color: #f0f0f0;
         }
-        .navbar{
+
+        .navbar {
             background-color: white;
             height: 100px;
-            position: sticky;
+            /* position: sticky; */
             top: 0;
             z-index: 3;
         }
-        .logo{
+
+        .logo {
             align-items: center;
         }
-        .nav-bg{
+
+        .nav-bg {
             padding-top: 20px;
             width: 1200px;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-        .nav-content{
+
+        .nav-content {
             align-items: center;
         }
-        .nav-content a{
+
+        .nav-content a {
             text-decoration: none;
             color: #A5A5A5;
             font-weight: 600;
             font-size: 14px;
             padding: 6px 10px;
         }
-        .green{
+
+        .green {
             height: 780px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .text{
+
+        .text {
             align-items: center;
             line-height: 1.2;
             margin-top: 150px;
         }
-        .text .stn-1 h1{
+
+        .text .stn-1 h1 {
             font-size: 82px;
         }
-        .stn-1 .off{
+
+        .stn-1 .off {
             color: #679509;
         }
-        .stn-2 p{
-            font-family:'Pacifico', cursive;
+
+        .stn-2 p {
+            font-family: 'Pacifico', cursive;
             font-size: 30px;
         }
-        .btn{
+
+        .btn {
             background-color: #86AE34;
             padding: 22px 42px;
             width: fit-content;
             text-align: center;
         }
-        .btn a{
+
+        .btn a {
             font-weight: 600;
             color: #ffffff;
         }
-        .btn-2{
+
+        .btn-2 {
             text-align: center;
             background-color: #86AE34;
             width: fit-content;
             padding: 2px 9px;
-            margin: 10px 0px 0 140px; 
+            margin: 10px 0px 0 140px;
         }
-        .btn-2 a{
-           
+
+        .btn-2 a {
+
             color: #ffffff;
             font-size: 12px;
         }
-        .btn-3{
+
+        .btn-3 {
             background-color: #86AE34;
-            padding: 17px 20px;
+            /* padding: 17px 20px;
             width: fit-content;
             text-align: center;
-            margin: 5px;
+            margin: 5px; */
+
+            margin: 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            height: 100%;
         }
-        .btn-3 a{
-           
-           color: #ffffff;
-           font-size: 16px;
-       }
-        .titlesection{
+
+        .btn-3 a {
+
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        .titlesection {
             width: 1200px;
             display: flex;
             margin: auto;
             justify-content: center;
         }
-        .titlesection h2{
+
+        .titlesection h2 {
             font-size: 32px;
         }
-        .titlesection h3.title2{
+
+        .titlesection h3.title2 {
             font-size: 48px;
             color: #86AE34;
         }
-        .contentsection{
+
+        .contentsection {
             display: flex;
         }
-        .titlesection 
-        .contentsection{
+
+        .titlesection .contentsection {
             display: flex;
             justify-content: center;
-            margin: 50px 0 ;
+            margin: 50px 0;
         }
-        .contentsection p{
+
+        .contentsection p {
             font-size: 16px;
             color: #8B8B8B;
         }
-        .page{
+
+        .page {
             padding: 0 15px;
             color: #A5A5A5;
         }
-     .tag{
+
+        .tag {
             color: #86AE34;
             font-size: 12px;
             font-weight: normal;
         }
-       .name{
+
+        .name {
             color: #333333;
             font-size: 15px;
             font-weight: normal;
         }
-        .price{
+
+        .price {
             color: #86AE34;
             font-size: 20px;
         }
-        .delete-text{
-          text-decoration: line-through;
-          color: #8B8B8B;
-          font-size: 14px;
+
+        .delete-text {
+            text-decoration: line-through;
+            color: #8B8B8B;
+            font-size: 14px;
         }
-        .context h2{
+
+        .context h2 {
             font-size: 20px;
 
         }
-        .welcome{
+
+        .welcome {
             margin-top: 80px;
         }
-        .product{
+
+        .product {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
             box-sizing: border-box;
         }
-        .item{
-            
+
+        .item {
+
             padding: 15px;
             width: 270px;
-           justify-content: center;
-           text-align: center;
-           position: relative;
+            justify-content: center;
+            text-align: center;
+            position: relative;
         }
-        .item img{
+
+        .item img {
             width: 80%;
             height: 80%;
         }
-        .item-pic{
+
+        .item-pic {
             border: 1px #f0f0f0 solid;
         }
-        .word{
-           text-align: center;
-           margin-top: 200px;
-           line-height: 0.5;
+
+        .word {
+            text-align: center;
+            margin-top: 200px;
+            line-height: 0.5;
         }
-        .word h2.t-1{
+
+        .word h2.t-1 {
             color: #363636;
             font-size: 82px;
         }
-        .word h2.t-2{
-            font-family:'Pacifico', cursive; 
+
+        .word h2.t-2 {
+            font-family: 'Pacifico', cursive;
             font-size: 30px;
         }
-        .heart{
+
+        .heart {
             background-color: white;
         }
-        .heart-bg{
+
+        .heart-bg {
             width: 55%;
         }
-        .heart-bg img{
+
+        .heart-bg img {
             width: 100%;
-        } 
-        .word-2{
+        }
+
+        .word-2 {
             width: 40%;
         }
-        .context{
+
+        .context {
             margin: 20px 0;
         }
-        .context p{
+
+        .context p {
             color: #8B8B8B;
             font-size: 16px;
             margin: 10px 0;
         }
-        .item-2{
-            padding: 15px;
-            width:370px;
+
+        .item-2 {
+            /* padding: 15px; */
+            width: 370px;
             text-align: center;
-  
+            margin: 10px 15px;
+            box-sizing: border-box;
         }
-        .item-3{
+
+        .item-3 {
             padding: 15px;
-            width:370px;
+            width: 370px;
 
         }
-        .product .time{
+
+        .product .time {
             color: #86AE43;
-        font-size: 12px;
+            font-size: 12px;
         }
-        .blog{
+
+        .blog {
             margin-top: 90xp;
         }
-        .pd-1{
+
+        .pd-1 {
             padding-top: 90px;
         }
-        .mg-1{
+
+        .mg-1 {
             margin-top: 50px;
         }
-        .mg-2{
+
+        .mg-2 {
             margin: 50px 0 50px 275px;
         }
-       .head img {
+
+        .head img {
             border-radius: 50%;
             border: 1px solid;
         }
-        .content{
+
+        .content {
             margin-top: 250px;
             text-align: center;
             color: #FFFFFF;
         }
-        .searchbox{
+
+        .searchbox {
             display: flex;
             justify-content: center;
             /* align-items: center; */
             text-align: center;
+            width: 35%;
+            height: 45px;
         }
-        .subscribe{
+
+        .searchbox input {
+            width: -webkit-fill-available;
+            height: 100%;
+            padding-left: 10px;
+
+            border: 1px solid lightgray;
+
+        }
+
+        .subscribe {
             margin: 80px 0;
             justify-content: space-between;
         }
-        .wrap{
+
+        .wrap {
             margin-top: 30px;
+            display: flex;
+            justify-content: center;
         }
-        .bg-2{
+
+        .bg-2 {
             height: 460px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .img-fruit{
+
+        .img-fruit {
             width: 50%;
         }
-        .img-fruit img{
+
+        .img-fruit img {
             width: 100%;
         }
-        .space{
+
+        .space {
             justify-content: space-between;
         }
-        .space-2{
+
+        .space-2 {
             justify-content: center;
         }
-        .word-1 h3{
+
+        .text-space {
+            text-align: start;
+        }
+
+        .word-1 h3 {
             font-size: 14px;
         }
-        .lnr-cart{
+
+        .lnr-cart {
             font-size: 16px;
             padding-right: 3px;
         }
+
         footer h4.text-3 {
             color: #79787f;
-            font-size: "PT Sans", sans-serif; 
+            font-size: "PT Sans", sans-serif;
             font-weight: normal;
         }
-        .sale{
-           padding: 8px 10px;
-           background-color: red;
-           color: white;
-           position: absolute;
-           right: 30px;
-           top: 30px;
-           font-size: 12px;
+
+        .sale {
+            padding: 8px 10px;
+            background-color: red;
+            color: white;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            font-size: 12px;
         }
-        .feature{
+
+        .feature {
             padding: 8px 10px;
             background-color: #86AE34;
             color: white;
             position: absolute;
             right: 30px;
-           top: 30px;
-           font-size: 12px;
+            top: 30px;
+            font-size: 12px;
+        }
+        .product-gp.text-space>div{
+            margin: 15px 0;
         }
     </style>
 
@@ -361,60 +462,61 @@
 
 
 </head>
+
 <body>
     <header>
-            <div class="title">
-                <div class="container space">
+        <div class="title">
+            <div class="container space">
                 <div class="word-1 text-color ">
-                   <h3>Last sale up to <b>20% OFF.</b> 
-                    Use code <b>“SALE70”.</b></h3>
+                    <h3>Last sale up to <b>20% OFF.</b>
+                        Use code <b>“SALE70”.</b></h3>
                 </div>
                 <ul class="breadcrumb">
                     <li><a href="#">COMPARE</a></li>
                     <li><a href="#">WISHLIST</a></li>
                     <li><a href="#">LOGIN</a></li>
                     <li><a href="#"><span class="lnr lnr-cart"></span>CART: 0</a></li>
-                    <li><a href="#">USD,$</a></li>            
-                 </ul>
-                </div>    
+                    <li><a href="#">USD,$</a></li>
+                </ul>
+            </div>
         </div>
-       
+
     </header>
     <div class="navbar">
         <div class="container">
             <div class="nav-bg">
-            <div class="logo">
-                <a href="#"><img src="assets2/asset0.png" alt=""></a>
+                <div class="logo">
+                    <a href="#"><img src="assets2/asset0.png" alt=""></a>
+                </div>
+                <nav class="nav-content">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">FEATURES</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">SHOP</a>
+                    <a href="#">CONTACTS</a>
+                </nav>
             </div>
-            <nav class="nav-content">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">FEATURES</a>
-                <a href="#">BLOG</a>
-                <a href="#">SHOP</a>
-                <a href="#">CONTACTS</a>
-            </nav>
-             </div>
         </div>
     </div>
     <div class="leaves">
         <div class="green" style="background-image: url(../Practice/assets2/asset36.png);">
-        <div class="container">
-            <div class="text">
-                <div class="stn-1">
-                    <h1>Green Leaves </br> Up To 
-                       <span class="off">20% Off</span>   </h1>
-                </div>
-                <div class="stn-2">
-                    <p>Always Fresh, Crispy and Full of Vitamins</p>
-                </div>
-                <div class="btn">
-                    <a href="#">ADD TO CART</a>
+            <div class="container">
+                <div class="text">
+                    <div class="stn-1">
+                        <h1>Green Leaves </br> Up To
+                            <span class="off">20% Off</span> </h1>
+                    </div>
+                    <div class="stn-2">
+                        <p>Always Fresh, Crispy and Full of Vitamins</p>
+                    </div>
+                    <div class="btn">
+                        <a href="#">ADD TO CART</a>
+                    </div>
+
                 </div>
 
             </div>
-
-        </div>
 
         </div>
     </div>
@@ -423,29 +525,32 @@
             <h3 class="title2">Welcome to our healthy farm!</h3>
         </div>
         <div class="container">
-           
-           <div class="contentsection mg-1">
-            <div class="item-2">
-                <div class="img">
-                    <a href="#"><img src="assets2/asset1.png" alt=""></a>
+
+            <div class="contentsection mg-1">
+                <div class="item-2">
+                    <div class="img">
+                        <a href="#"><img src="assets2/asset1.png" alt=""></a>
+                    </div>
+                    <h3>Best Quality Products</h3>
+                    <p>We stand for providing the most fresh organic products which will serve your health and be a
+                        source of vitamins and minerals for our clients.</p>
                 </div>
-                <h3>Best Quality Products</h3>
-                <p>We stand for providing the most fresh organic products which will serve your health and be a source of vitamins and minerals for our clients.</p>
-            </div>
-            <div class="item-2">
-                <div class="img">
-                    <a href="#"><img src="assets2/asset2.png" alt=""></a>
+                <div class="item-2">
+                    <div class="img">
+                        <a href="#"><img src="assets2/asset2.png" alt=""></a>
+                    </div>
+                    <h3>Farmer Products</h3>
+                    <p>We work with many farms to provide you with natural products grown with love and care with no GMO
+                        or pesticides.</p>
                 </div>
-                <h3>Farmer Products</h3>
-                <p>We work with many farms to provide you with natural products grown with love and care with no GMO or pesticides.</p>
-            </div>
-            <div class="item-2">
-                <div class="img">
-                    <a href="#"><img src="assets2/asset3.png" alt=""></a>
+                <div class="item-2">
+                    <div class="img">
+                        <a href="#"><img src="assets2/asset3.png" alt=""></a>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>We want our client to receive their fresh products as soon as possible, so we process and ship
+                        the order at once.</p>
                 </div>
-                <h3>Fast Delivery</h3>
-                <p>We want our client to receive their fresh products as soon as possible, so we process and ship the order at once.</p>
-            </div>
             </div>
         </div>
 
@@ -467,7 +572,8 @@
     </div>
     <div class="products">
         <div class="titlesection font mg-1">
-            <h2>Our Products</h2></div>
+            <h2>Our Products</h2>
+        </div>
         <div class="titlesection  ">
             <span class="page">NEW ARRIVALS</span>
             <span class="page">ORGANIC & NATURAL</span>
@@ -475,74 +581,74 @@
             <span class="page">PLUM CAKE</span>
         </div>
         <div class="container">
-        
-            <div class="product mg-1">             
+
+            <div class="product mg-1">
                 <div class="item">
                     <div class="item-pic">
-                    <a href="#" class="product-pic"><img src="assets2/asset6.png" alt=""></a>
-                    <span class="sale">SALE!</span>
-                     </div>
+                        <a href="#" class="product-pic"><img src="assets2/asset6.png" alt=""></a>
+                        <span class="sale">SALE!</span>
+                    </div>
                     <h3 class="tag">Organic, Vegetable, Fruit</h3>
-                     <h3 class="name">Organic Beetroot</h3>
+                    <h3 class="name">Organic Beetroot</h3>
                     <h3 class="price"><span class="delete-text">4.99$</span>
-                         2.56$</h3>
+                        2.56$</h3>
                 </div>
                 <div class="item">
                     <div class="item-pic">
-                    <a href="#" class="product-pic"><img src="assets2/asset7.png" alt=""></a>
-                    <span class="feature">FEATURED</span>
+                        <a href="#" class="product-pic"><img src="assets2/asset7.png" alt=""></a>
+                        <span class="feature">FEATURED</span>
                     </div>
                     <h3 class="tag">Organic Fruit Packaged Meals Baking</h3>
-                     <h3 class="name">Organic Cauliflower</h3>
+                    <h3 class="name">Organic Cauliflower</h3>
                     <h3 class="price">7.88$</h3>
                 </div>
                 <div class="item">
                     <div class="item-pic">
-                    <a href="#" class="product-pic"><img src="assets2/asset8.png" alt=""></a>
+                        <a href="#" class="product-pic"><img src="assets2/asset8.png" alt=""></a>
                     </div>
                     <h3 class="tag">Organic, Vegetable, Fruit</h3>
-                     <h3 class="name">Organic Fennel</h3>
+                    <h3 class="name">Organic Fennel</h3>
                     <h3 class="price">4.81$</h3>
                 </div>
                 <div class="item">
                     <div class="item-pic">
-                    <a href="#" class="product-pic"><img src="assets2/asset9.png" alt=""></a>
+                        <a href="#" class="product-pic"><img src="assets2/asset9.png" alt=""></a>
                     </div>
                     <h3 class="tag">Organic, Vegetable</h3>
-                     <h3 class="name">Organic Jap Pumpkin 1kg</h3>
+                    <h3 class="name">Organic Jap Pumpkin 1kg</h3>
                     <h3 class="price">9.88$</h3>
                 </div>
                 <div class="item">
                     <div class="item-pic">
-                    <a href="#" class="product-pic"><img src="assets2/asset10.png" alt=""></a>
+                        <a href="#" class="product-pic"><img src="assets2/asset10.png" alt=""></a>
                     </div>
                     <h3 class="tag">Organic,Fruit,Packaged Meals</h3>
-                     <h3 class="name">Organic Kiwi Fruit 500g</h3>
+                    <h3 class="name">Organic Kiwi Fruit 500g</h3>
                     <h3 class="price">6.88$</h3>
                 </div>
                 <div class="item">
                     <div class="item-pic">
-                    <a href="#" class="product-pic"><img src="assets2/asset11.png" alt=""></a>
-                     </div>
+                        <a href="#" class="product-pic"><img src="assets2/asset11.png" alt=""></a>
+                    </div>
                     <h3 class="tag">Organic,Fruit,Packaged Meals</h3>
-                     <h3 class="name">Organic Mushrooms, 250g</h3>
+                    <h3 class="name">Organic Mushrooms, 250g</h3>
                     <h3 class="price">3.13$</h3>
                 </div>
                 <div class="item">
                     <div class="item-pic">
-                    <a href="#" class="product-pic"><img src="assets2/asset12.png" alt=""></a>
+                        <a href="#" class="product-pic"><img src="assets2/asset12.png" alt=""></a>
                     </div>
                     <h3 class="tag">Organic,Fruit,Packaged Meals</h3>
-                     <h3 class="name">Organic Parsley</h3>
+                    <h3 class="name">Organic Parsley</h3>
                     <h3 class="price">2.25$</h3>
                 </div>
                 <div class="item">
                     <div class="item-pic">
-                    <a href="#" class="product-pic"><img src="assets2/asset13.png" alt=""></a>
-                    <span class="feature">FEATURED</span>
+                        <a href="#" class="product-pic"><img src="assets2/asset13.png" alt=""></a>
+                        <span class="feature">FEATURED</span>
                     </div>
                     <h3 class="tag">Organic, Vegetable, Fruit</h3>
-                     <h3 class="name">Organic Sebago Potatoes</h3>
+                    <h3 class="name">Organic Sebago Potatoes</h3>
                     <h3 class="price">2.50-7.50$</h3>
                 </div>
 
@@ -556,42 +662,45 @@
 
     </div>
     <div class="fruits-banner">
-        
-            <div class="bg" style="background-image: url(../Practice/assets2/asset37.png);">
+
+        <div class="bg" style="background-image: url(../Practice/assets2/asset37.png);">
             <div class="container space-2">
-            <div class="word">
-                <h2 class="t-1">
-                    Fruits and Vegetables
-                </h2>
-                <h2 class="t-2">Fresh and Delicious All Year Round!</h2>
-                <div class="btn mg-2"><a href="#">Shop Now</a>  
+                <div class="word">
+                    <h2 class="t-1">
+                        Fruits and Vegetables
+                    </h2>
+                    <h2 class="t-2">Fresh and Delicious All Year Round!</h2>
+                    <div class="btn mg-2"><a href="#">Shop Now</a>
+                    </div>
                 </div>
-            </div>
-            
-            
+
+
             </div>
 
         </div>
     </div>
     <div class="heart">
         <div class="container space">
-        <div class="heart-bg"><img src="assets2/asset29.png "alt=""></div>
+            <div class="heart-bg"><img src="assets2/asset29.png " alt=""></div>
             <div class="word-2">
                 <div class="context">
                     <h2 class="font">A Source of Vitamins</h2>
-                    <p>Vegetables can be eaten either raw or cooked and play an important role in human nutrition, being mostly low in fat and carbohydrates, but high in vitamins, minerals and dietary fiber.</p>
+                    <p>Vegetables can be eaten either raw or cooked and play an important role in human nutrition, being
+                        mostly low in fat and carbohydrates, but high in vitamins, minerals and dietary fiber.</p>
                 </div>
                 <div class="context">
                     <h2 class="font">Best Quality Products</h2>
                     <p>
-                        “We eliminated any possible pollution in our soils in order to deliver the purest organic produce to our customers’ tables.“</p>
+                        “We eliminated any possible pollution in our soils in order to deliver the purest organic
+                        produce to our customers’ tables.“</p>
                 </div>
                 <div class="context">
                     <h2 class="font">Best Quality Products</h2>
-                    <p>“We eliminated any possible pollution in our soils in order to deliver the purest organic produce to our customers’ tables.“</p>
+                    <p>“We eliminated any possible pollution in our soils in order to deliver the purest organic produce
+                        to our customers’ tables.“</p>
                 </div>
             </div>
-        
+
         </div>
 
     </div>
@@ -600,126 +709,130 @@
             <div class="titlesection mg-1">
                 <h2 class="font">Latest from the Blog</h2>
             </div>
-        <div class="container">
-           
-            <div class="product">
-                <div class="item-2 mg-1">
-                    <div class="img">
-                        <a href="#"><img src="assets2/asset30.png" alt=""></a>
+            <div class="container">
+
+                <div class="product">
+                    <div class="item-2 mg-1">
+                        <div class="img">
+                            <a href="#"><img src="assets2/asset30.png" alt=""></a>
+                        </div>
+
+                        <div class="btn-2"><a href="#">YOUR HEALTH</a></div>
+                        <h3>Health Benefits of a Raw Food</h3>
+                        <p class="time">October 23, 2017Comments: 0Posted by admin</p>
                     </div>
-                    
-                    <div class="btn-2"><a href="#">YOUR HEALTH</a></div>
-                    <h3>Health Benefits of a Raw Food</h3>
-                    <p class="time">October 23, 2017Comments: 0Posted by admin</p>
-                </div>
-                <div class="item-2 mg-1">
-                    <div class="img">
-                        <a href="#"><img src="assets2/asset31.png" alt=""></a>
+                    <div class="item-2 mg-1">
+                        <div class="img">
+                            <a href="#"><img src="assets2/asset31.png" alt=""></a>
+                        </div>
+                        <div class="btn-2"><a href="#">YOUR HEALTH</a></div>
+                        <h3>Health Benefits of a Raw Food</h3>
+                        <p class="time">October 23, 2017Comments: 0Posted by admin</p>
                     </div>
-                    <div class="btn-2"><a href="#">YOUR HEALTH</a></div>
-                    <h3>Health Benefits of a Raw Food</h3>
-                    <p class="time">October 23, 2017Comments: 0Posted by admin</p>
-                </div>
-                <div class="item-2 mg-1">
-                    <div class="img">
-                        <a href="#"><img src="assets2/asset32.png" alt=""></a>
+                    <div class="item-2 mg-1">
+                        <div class="img">
+                            <a href="#"><img src="assets2/asset32.png" alt=""></a>
+                        </div>
+                        <div class="btn-2"><a href="#">YOUR HEALTH</a></div>
+                        <h3>Health Benefits of a Raw Food</h3>
+                        <p class="time">October 23, 2017Comments: 0Posted by admin</p>
                     </div>
-                    <div class="btn-2"><a href="#">YOUR HEALTH</a></div>
-                    <h3>Health Benefits of a Raw Food</h3>
-                    <p class="time">October 23, 2017Comments: 0Posted by admin</p>
                 </div>
             </div>
-        </div>
         </div>
     </div>
     <div class="coldcreal">
         <div class="container">
             <div class="product">
-            <div class="item-2">
-                <h2 class="text-2 font">Cold Cereal</h2>
-                <div class="item-pic">
-                    <a href="#" class="product-pic"><img src="assets2/asset6.png" alt=""></a>
+                <div class="item-2">
+                    <h2 class="text-2 font text-space">Cold Cereal</h2>
+                    <div class="item-pic">
+                        <a href="#" class="product-pic"><img src="assets2/asset6.png" alt=""></a>
+                    </div>
+                    <div class="product-gp text-space">
+                        <div class="tag">Organic, Vegetable, Fruit</div>
+                        <div class="name">Organic Beetroot</div>
+                        <div class="price"><span class="delete-text">4.99$</span>2.56$</div>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <h2 class="text-2 font text-space">Cold Cereal</h2>
+                    <div class="item-pic">
+
+                        <a href="#" class="product-pic"><img src="assets2/asset6.png" alt=""></a>
+                    </div>
+                    <div class=" .product-gp text-space">
+                        <h3 class="tag">Organic, Vegetable, Fruit</h3>
+                        <h3 class="name">Organic Beetroot</h3>
+                        <h3 class="price"><span class="delete-text">4.99$</span>2.56$</h3>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <h2 class="text-2 font">Cold Cereal</h2>
+                    <div class="item-pic">
+
+                        <a href="#" class="product-pic"><img src="assets2/asset6.png" alt=""></a>
                     </div>
                     <h3 class="tag">Organic, Vegetable, Fruit</h3>
-                     <h3 class="name">Organic Beetroot</h3>
+                    <h3 class="name">Organic Beetroot</h3>
                     <h3 class="price"><span class="delete-text">4.99$</span>2.56$</h3>
-            </div>
-            <div class="item-2">
-                <h2 class="text-2 font">Cold Cereal</h2>
-                <div class="item-pic">
-                   
-                    <a href="#" class="product-pic"><img src="assets2/asset6.png" alt=""></a>
+                </div>
+                <div class="item-2">
+                    <div class="item-pic">
+
+                        <a href="#" class="product-pic"><img src="assets2/asset7.png" alt=""></a>
                     </div>
                     <h3 class="tag">Organic, Vegetable, Fruit</h3>
-                     <h3 class="name">Organic Beetroot</h3>
-                    <h3 class="price"><span class="delete-text">4.99$</span>2.56$</h3>
-            </div>
-            <div class="item-2">
-                <h2 class="text-2 font">Cold Cereal</h2>
-                <div class="item-pic">
-                   
-                    <a href="#" class="product-pic"><img src="assets2/asset6.png" alt=""></a>
-                    </div>
-                    <h3 class="tag">Organic, Vegetable, Fruit</h3>
-                     <h3 class="name">Organic Beetroot</h3>
-                    <h3 class="price"><span class="delete-text">4.99$</span>2.56$</h3>
-            </div>
-            <div class="item-2">
-                <div class="item-pic">
-                   
-                    <a href="#" class="product-pic"><img src="assets2/asset7.png" alt=""></a>
-                    </div>
-                    <h3 class="tag">Organic, Vegetable, Fruit</h3>
-                     <h3 class="name">Organic Beetroot</h3>
+                    <h3 class="name">Organic Beetroot</h3>
                     <h3 class="price">2.56$</h3>
-            </div>
-            <div class="item-2">
-                <div class="item-pic">
-                   
-                    <a href="#" class="product-pic"><img src="assets2/asset7.png" alt=""></a>
+                </div>
+                <div class="item-2">
+                    <div class="item-pic">
+
+                        <a href="#" class="product-pic"><img src="assets2/asset7.png" alt=""></a>
                     </div>
                     <h3 class="tag">Organic, Vegetable, Fruit</h3>
-                     <h3 class="name">Organic Beetroot</h3>
+                    <h3 class="name">Organic Beetroot</h3>
                     <h3 class="price">2.56$</h3>
-            </div>
-            <div class="item-2">
-                <div class="item-pic">
-                   
-                    <a href="#" class="product-pic"><img src="assets2/asset7.png" alt=""></a>
+                </div>
+                <div class="item-2">
+                    <div class="item-pic">
+
+                        <a href="#" class="product-pic"><img src="assets2/asset7.png" alt=""></a>
                     </div>
                     <h3 class="tag">Organic, Vegetable, Fruit</h3>
-                     <h3 class="name">Organic Beetroot</h3>
+                    <h3 class="name">Organic Beetroot</h3>
                     <h3 class="price">2.56$</h3>
-            </div>
-            <div class="item-2">
-                <div class="item-pic">
-                   
-                    <a href="#" class="product-pic"><img src="assets2/asset14.png" alt=""></a>
+                </div>
+                <div class="item-2">
+                    <div class="item-pic">
+
+                        <a href="#" class="product-pic"><img src="assets2/asset14.png" alt=""></a>
                     </div>
                     <h3 class="tag">Organic, Vegetable, Fruit</h3>
-                     <h3 class="name">Organic Beetroot</h3>
+                    <h3 class="name">Organic Beetroot</h3>
                     <h3 class="price">2.56$</h3>
-            </div>
-            <div class="item-2">
-                <div class="item-pic">
-                   
-                    <a href="#" class="product-pic"><img src="assets2/asset14.png" alt=""></a>
+                </div>
+                <div class="item-2">
+                    <div class="item-pic">
+
+                        <a href="#" class="product-pic"><img src="assets2/asset14.png" alt=""></a>
                     </div>
                     <h3 class="tag">Organic, Vegetable, Fruit</h3>
-                     <h3 class="name">Organic Beetroot</h3>
+                    <h3 class="name">Organic Beetroot</h3>
                     <h3 class="price">2.56$</h3>
-            </div>
-            <div class="item-2">
-                <div class="item-pic">
-                   
-                    <a href="#" class="product-pic"><img src="assets2/asset14.png" alt=""></a>
+                </div>
+                <div class="item-2">
+                    <div class="item-pic">
+
+                        <a href="#" class="product-pic"><img src="assets2/asset14.png" alt=""></a>
                     </div>
                     <h3 class="tag">Organic, Vegetable, Fruit</h3>
-                     <h3 class="name">Organic Beetroot</h3>
+                    <h3 class="name">Organic Beetroot</h3>
                     <h3 class="price">2.56$</h3>
+                </div>
             </div>
-        </div>
-            
+
         </div>
 
 
@@ -727,23 +840,25 @@
     </div>
     <div class="client">
         <div class="bg" style="background-image: url(../Practice/assets2/asset39.png);">
-        
+
             <div class="container">
                 <div class="content">
                     <h2 class="font">Our Clients Testimonials</h2>
                     <div class="head">
-                    <img  src="assets2/asset33.png" alt="">
+                        <img src="assets2/asset33.png" alt="">
                     </div>
                     <h2>66</h2>
-                    <p>It was my first time to buy healthy food online and I can say I will order it again and again! Now I pay more attention to my health and have a lot of organic products. Thank you, guys, for your attention to details and customers!</p>
+                    <p>It was my first time to buy healthy food online and I can say I will order it again and again!
+                        Now I pay more attention to my health and have a lot of organic products. Thank you, guys, for
+                        your attention to details and customers!</p>
                     <h3>Alice Show</h3>
                     <h4>Customer</h4>
                 </div>
             </div>
-        
-        
-        
-        
+
+
+
+
         </div>
 
 
@@ -751,61 +866,102 @@
 
     </div>
     <div class="subscribe">
-        <div class="titlesection font size "><h2>Subscribe Newsletter</h2></div>
- 
+        <div class="titlesection font size ">
+            <h2>Subscribe Newsletter</h2>
+        </div>
+
         <div class="wrap">
             <div class="searchbox">
                 <input type="search" id="search" placeholder="Enter Your Email" />
-                 <div class="btn-3"> <a href="#">Suscribe</a>   </div>
+                <div class="btn-3"> <a href="#">SUSCRIBE</a> </div>
             </div>
         </div>
 
 
     </div>
-   <footer >
-    <div class="bg-2 mg-1" style="background-image: url(../Practice/assets2/asset41.png);">
-        <div class="container pd-1">
-            <div class="item-3">
-                <h2 class="font">Categories</h2>
-                <a href="#"><h4 class="text-3">New Products</h4></a>
-                <a href="#"><h4 class="text-3">Our Stores</h4></a>
-                <a href="#"><h4 class="text-3">Top sellers</h4></a>
-                <a href="#"><h4 class="text-3">Uncategorized</h4></a>
-                <a href="#"><h4 class="text-3">Your Health</h4></a>
+    <footer>
+        <div class="bg-2 mg-1" style="background-image: url(../Practice/assets2/asset41.png);">
+            <div class="container pd-1">
+                <div class="item-3">
+                    <h2 class="font">Categories</h2>
+                    <a href="#">
+                        <h4 class="text-3">New Products</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3">Our Stores</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3">Top sellers</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3">Uncategorized</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3">Your Health</h4>
+                    </a>
+                </div>
+                <div class="item-3">
+                    <h2 class="font">Information</h2>
+                    <a href="#">
+                        <h4 class="text-3">Home</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3">About</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3">Blog</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3">Shop</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3">Contacts</h4>
+                    </a>
+                </div>
+                <div class="item-3">
+                    <h2 class="font">My account</h2>
+                    <a href="#">
+                        <h4 class="text-3">Checkout</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3">Compare</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3">Blog</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3">My account</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3">Wishlist</h4>
+                    </a>
+                </div>
+                <div class="item-3">
+                    <h2 class="font">Store Information</h2>
+                    <a href="#">
+                        <h4 class="text-3"><span class="lnr lnr-map-marker"></span>
+                            Address: 4578 Marmora Road, Glasgow</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3"><span class="lnr lnr-phone-handset"></span>
+                            Phones: +3(800) 2345-6789:+3(800) 2345-6790</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3"> <span class="lnr lnr-clock"></span> Hours: 7 Days a week from 9:00 am to
+                            7:00 pm</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="text-3"><span class="lnr lnr-envelope"></span> E-mail: info@demolink.org</h4>
+                    </a>
+                </div>
             </div>
-            <div class="item-3">
-                <h2 class="font">Information</h2>
-                <a href="#"><h4 class="text-3">Home</h4></a>
-                <a href="#"><h4 class="text-3">About</h4></a>
-                <a href="#"><h4 class="text-3">Blog</h4></a>
-                <a href="#"><h4 class="text-3">Shop</h4></a>
-                <a href="#"><h4 class="text-3">Contacts</h4></a>
-            </div>
-            <div class="item-3">
-                <h2 class="font">My account</h2>
-                <a href="#"><h4 class="text-3">Checkout</h4></a>
-                <a href="#"><h4 class="text-3">Compare</h4></a>
-                <a href="#"><h4 class="text-3">Blog</h4></a>
-                <a href="#"><h4 class="text-3">My account</h4></a>
-                <a href="#"><h4 class="text-3">Wishlist</h4></a>
-            </div>
-            <div class="item-3">
-                <h2 class="font">Store Information</h2>
-                <a href="#"><h4 class="text-3"><span class="lnr lnr-map-marker"></span>
-                    Address: 4578 Marmora Road, Glasgow</h4></a>
-                <a href="#"><h4 class="text-3"><span class="lnr lnr-phone-handset"></span>
-                     Phones: +3(800) 2345-6789:+3(800) 2345-6790</h4></a>
-                <a href="#"><h4 class="text-3"> <span class="lnr lnr-clock"></span> Hours: 7 Days a week from 9:00 am to 7:00 pm</h4>
-                   </a>
-                <a href="#"><h4 class="text-3"><span class="lnr lnr-envelope"></span> E-mail: info@demolink.org</h4></a>
-            </div>
+
         </div>
-       
-    </div>
 
 
 
 
-   </footer>
+    </footer>
 </body>
+
 </html>
