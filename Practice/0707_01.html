@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .pic{
+            position: relative;
+            left:0;
+            font-size: 40px;
+            height: 400px;
+            width: 400px;
+            /* opacity: 0; */
+            transition: 1s;
+            /* display: none; */
+        }
+        .pic:hover .text{
+        
+            opacity: 0.5;
+            /* left: 0; */
+            /* display: block; */
+          
+        }
+        .text{
+           background-color: violet;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            /* left:-100%
+            overflow: hidden; */
+            top: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="pic">
+        <img src="https://picsum.photos/400/400/?random=1">
+        <div class="text">A
+
+        </div>
+    </div>
+
+    <div class="title">
+        <div class="context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam maiores ipsa provident, ratione perspiciatis vero optio nemo magnam, repellat mollitia minus soluta quam deleniti doloribus architecto laboriosam debitis. Aliquid!</div>
+        <div class="context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quas ea ipsum. Suscipit necessitatibus dolores dignissimos porro quisquam non ipsam inventore facilis, pariatur minima labore ratione eos nobis et quaerat.</div>
+        <div class="context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque optio pariatur adipisci, quia laborum quo reiciendis blanditiis ipsum corporis tenetur et aperiam qui accusantium atque exercitationem temporibus inventore doloribus? Iusto!</div>
+        <div class="context">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, accusamus aliquam debitis totam a placeat doloribus. Perspiciatis, explicabo! Eligendi dolore tempora ducimus, officia et rem praesentium excepturi atque aperiam sint?</div>
+
+
+    </div>
+    
+</body>
+</html>

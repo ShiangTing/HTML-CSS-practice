@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        * {
+            font-family: "Microsoft JhengHei", "儷黑 Pro", "LiHei Pro", sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 960px;
+            margin: auto;
+        }
+
+        .fun,
+        .safe {
+            margin: 100px 0;
+            position: relative;
+        }
+
+        .colorblock {
+            background-color: #eeeeee;
+            height: 290px;
+            width: 400px;
+            opacity: 0.5;
+            position: relative;
+            z-index: -99;
+            float: right;
+            margin-top: 30px;
+        }
+
+        .colorblock2 {
+            background-color: #eeeeee;
+            height: 413px;
+            width: 518px;
+            opacity: 0.5;
+            position: relative;
+            z-index: -99;
+            float: right;
+            right: 200px;
+        }
+
+        .button {
+            position: absolute;
+            right: 55px;
+            z-index: 10;
+            top: 260px;
+        }
+
+        .button2 {
+            position: absolute;
+            z-index: 10;
+            top: 260px;
+        }
+
+        .redblock {
+            width: 355px;
+            /* height: 150px; */
+            background-color: rgba(184, 8, 8, 1);
+            position: relative;
+            display: flex;
+        }
+
+        .pic {
+            position: absolute;
+            /* float: right; */
+            left: 20%;
+            top: 90px;
+            z-index: -1;
+        }
+
+        .pic2 {
+            position: relative;
+            bottom: 350px;
+            z-index: -1;
+            left: 10px;
+        }
+
+        .textbox4 {
+            float: right;
+        }
+
+        .redblock h3,
+        .redblock2 h3 {
+            font-size: 50px;
+            color: white;
+        }
+
+        .redblock2 {
+            width: 355px;
+            /* height: 150px; */
+            background-color: rgba(184, 8, 8, 1);
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 406px;
+        }
+
+        .blackblock {
+            width: 355px;
+            /* height: 238px; */
+            padding: 10px 0;
+            background-color: black;
+            position: relative;
+            color: white;
+            text-align: left;
+
+        }
+
+        .blackblock2 {
+            width: 355px;
+            height: 238px;
+            background-color: black;
+            position: relative;
+            color: white;
+
+            margin-left: 406px;
+        }
+
+        .greyblock {
+            width: 682px;
+            /* height: 275px; */
+            background-color: #eee;
+            z-index: 20;
+            padding: 20px;
+            margin-top: 90px;
+            line-height: 1;
+            box-sizing: border-box;
+        }
+
+        .greyblock .title {
+            color: #e7211b;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .greyblock .title .line {
+            color: #e7211b;
+            /* position: relative; */
+            height: 0;
+            width: 75%;
+            border-top: 2px solid #e7211b;
+            font-weight: bold;
+        }
+
+        .contentbox {
+            padding: 10px 15px 0 15px;
+            font-size: 20px;
+
+        }
+
+        .contentbox p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .contentbox2 {
+            padding: 15px;
+        }
+
+        .sub-title {
+            padding: 10px 0 0 0;
+        }
+
+        .slogan {
+
+            width: fit-content;
+            background-color: black;
+
+        }
+
+        div.slogan {
+            padding: 5px 3px;
+            color: white;
+            margin: -5px 0;
+        }
+
+        .trans {
+
+            writing-mode: vertical-lr;
+            font-size: 130px;
+            text-align: center;
+            margin-left: -25px;
+            color: white;
+        }
+
+        .trans2 {
+            writing-mode: vertical-lr;
+            font-size: 130px;
+            margin-right: -30px;
+            color: white;
+        }
+
+        .box2 {
+            position: absolute;
+            top: -50px;
+            right: 0px;
+
+        }
+
+        .sub-title li {
+            list-style: square;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fun">
+        <div class="container">
+
+            <div class="colorblock">
+
+            </div>
+            <div class="pic"><img src="assets3/asset56.png" alt="">
+
+            </div>
+            <div class="button"><img src="assets3/asset57.png" alt=""></div>
+            <div class="box">
+                <div class="textbox">
+                    <div class="redblock">
+                        <span class="trans">01</span>
+                        <h3>操控樂趣</h3>
+                    </div>
+                    <div class="blackblock">
+                        <div class="contentbox">
+                            <h3>人人滿意的駕駛體驗</h3>
+                            <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳聘的行駛快感。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="textbox2">
+                    <div class="greyblock">
+                        <div class="title">
+                            <div>因為我們做了這些設計</div>
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="sub-title">
+                            <div class="slogan">低重心設計</div>
+                            <ul>
+                                <li>透過低重心的設計，不僅呈現</li>
+                            </ul>
+                        </div>
+
+                        <div class="sub-title">
+                            <div class="slogan">低重心設計</div>
+                            <ul>
+                                <li>透過低重心的設計，不僅呈現</li>
+                            </ul>
+                        </div>
+
+                        <div class="sub-title">
+                            <div class="slogan">低重心設計</div>
+                            <ul>
+                                <li>透過低重心的設計，不僅呈現</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <div class="safe">
+        <div class="container">
+            <div class="colorblock2"> </div>
+            <div class="pic2"><img src="assets3/asset60.png" alt="">
+
+            </div>
+            <div class="button2"><img src="assets3/asset57.png" alt=""></div>
+            <div class="box2">
+                <div class="textbox3">
+                    <div class="redblock2">
+                        <h3>安全守護</h3>
+                        <span class="trans2">02</span>
+                    </div>
+                    <div class="blackblock2">
+                        <div class="contentbox2">
+                            <div>行車更安心的高剛性車體</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, veniam!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="textbox4">
+                    <div class="greyblock">
+                        <div class="title">
+                            <div>因為我們做了這些革新</div>
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="sub-title">
+                            <div class="slogan">主動安全</div>
+                            <ul>
+                                <li>透過低重心的設計，不僅呈現</li>
+                            </ul>
+                        </div>
+
+                        <div class="sub-title">
+                            <div class="slogan">被動安全</div>
+                            <ul>
+                                <li>透過低重心的設計，不僅呈現</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+            <div class="fun">
+                <div class="container">
+
+                    <div class="colorblock">
+
+                    </div>
+                    <div class="pic"><img src="assets3/asset63.png" alt="">
+
+                    </div>
+                    <div class="button"><img src="assets3/asset57.png" alt=""></div>
+                    <div class="box">
+                        <div class="textbox">
+                            <div class="redblock">
+                                <span class="trans">03</span>
+                                <h3>操控樂趣</h3>
+                            </div>
+                            <div class="blackblock">
+                                <div class="contentbox">
+                                    <h3>人人滿意的駕駛體驗</h3>
+                                    <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳聘的行駛快感。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="textbox2">
+                            <div class="greyblock">
+                                <div class="title">
+                                    <div>因為我們做了這些設計</div>
+                                    <div class="line"></div>
+                                </div>
+
+                                <div class="sub-title">
+                                    <div class="slogan">低重心設計</div>
+                                    <ul>
+                                        <li>透過低重心的設計，不僅呈現</li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-title">
+                                    <div class="slogan">低重心設計</div>
+                                    <ul>
+                                        <li>透過低重心的設計，不僅呈現</li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-title">
+                                    <div class="slogan">低重心設計</div>
+                                    <ul>
+                                        <li>透過低重心的設計，不僅呈現</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="safe">
+                <div class="container">
+                    <div class="colorblock2"> </div>
+                    <div class="pic2"><img src="assets3/asset66.png" alt="">
+
+                    </div>
+                    <div class="button2"><img src="assets3/asset57.png" alt=""></div>
+                    <div class="box2">
+                        <div class="textbox3">
+                            <div class="redblock2">
+                                <h3>安全守護</h3>
+                                <span class="trans2">04</span>
+                            </div>
+                            <div class="blackblock2">
+                                <div class="contentbox2">
+                                    <div>行車更安心的高剛性車體</div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, veniam!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="textbox4">
+                            <div class="greyblock">
+                                <div class="title">
+                                    <div>因為我們做了這些革新</div>
+                                    <div class="line"></div>
+                                </div>
+
+                                <div class="sub-title">
+                                    <div class="slogan">主動安全</div>
+                                    <ul>
+                                        <li>透過低重心的設計，不僅呈現</li>
+                                    </ul>
+                                </div>
+
+                                <div class="sub-title">
+                                    <div class="slogan">被動安全</div>
+                                    <ul>
+                                        <li>透過低重心的設計，不僅呈現</li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+                    <div class="fun">
+                        <div class="container">
+
+                            <div class="colorblock">
+
+                            </div>
+                            <div class="pic"><img src="assets3/asset69.png" alt="">
+
+                            </div>
+                            <div class="button"><img src="assets3/asset57.png" alt=""></div>
+                            <div class="box">
+                                <div class="textbox">
+                                    <div class="redblock">
+                                        <span class="trans">05</span>
+                                        <h3>操控樂趣</h3>
+                                    </div>
+                                    <div class="blackblock">
+                                        <div class="contentbox">
+                                            <h3>人人滿意的駕駛體驗</h3>
+                                            <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳聘的行駛快感。</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="textbox2">
+                                    <div class="greyblock">
+                                        <div class="title">
+                                            <div>因為我們做了這些設計</div>
+                                            <div class="line"></div>
+                                        </div>
+
+                                        <div class="sub-title">
+                                            <div class="slogan">低重心設計</div>
+                                            <ul>
+                                                <li>透過低重心的設計，不僅呈現</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="sub-title">
+                                            <div class="slogan">低重心設計</div>
+                                            <ul>
+                                                <li>透過低重心的設計，不僅呈現</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="sub-title">
+                                            <div class="slogan">低重心設計</div>
+                                            <ul>
+                                                <li>透過低重心的設計，不僅呈現</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+</body>
+
+</html>
