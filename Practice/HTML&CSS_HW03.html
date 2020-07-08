@@ -85,19 +85,26 @@
             top: 0;
             z-index: 3;
         }
-        /* .nav-content li:nth-child(3) .navbar-extend{
-            display: block;
-        } */
+    
         .navbar-extend{
             font-weight: normal;
             position:absolute;
+            width: 80%;
             left: 150px;
             top: 65px;
             line-height: 2;
-          opacity: 0;
-          transition: 1s;
-          z-index: -100;
+            display: none;
+            transition: 1s;
+            /* opacity: 0; */
+            z-index: -1;
         }
+
+        .navbar-extend.extend-width{
+            width:inherit;
+            left: 75%;
+         
+        }
+    
         .navbar-extend .li-title{
             font-size: 17px;
             color: #4f4f4f;
@@ -108,11 +115,29 @@
         }
         .nav-text li:nth-child(3):hover .navbar-extend
         {
-        opacity: 1;
-        z-index: 99;
-           /* display: block; */
+            /* opacity: 1;
+            top:65px; */
+            display: block;
+            z-index: 1;
+       
         }
-
+        .nav-text li:nth-child(4):hover .navbar-extend
+        {
+            /* opacity: 1;
+            top:65px; */
+            display: block;
+        z-index: 99;
+       
+        }
+        .nav-text li:nth-child(5):hover .navbar-extend
+        {
+            /* opacity: 1;
+            top:65px; */
+            display: block;
+            z-index: 99;
+       
+        }
+        
         
         .navbox{
             margin: 30px 15px 15px 15px;
@@ -551,7 +576,7 @@
                     <ul class="nav-text">
                         <li> <a href="#">HOME</a></li>
                         <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">FEATURES <span class="lnr lnr-chevron-down"></span></a>
+                        <li><a  class="a" href="#">FEATURES <span class="lnr lnr-chevron-down"></span></a>
                             <div class="navbar-extend">
                                 <div class="nav-flex">
                                     <ul>
@@ -594,8 +619,59 @@
                         
                         
                         </li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">SHOP</a></li>
+                        <li><a  href="#">BLOG <span class="lnr lnr-chevron-down"></span></a>
+                            <div class="navbar-extend ex-position">
+                                <div class="nav-flex">
+                                    <ul>
+                                        <li class="li-title  font">Blog Layout</li>
+                                        <li>Classic </li>
+                                        <li>Modern Listing</li>
+                                        <li>Grid</li>
+                                        <li>Masonry</li>                
+                                        <li>Justify</li>
+                               
+                                    </ul>
+                        
+                                    <ul>
+                                        <li class="li-title font">Sidebar</li>
+                                        <li>Left Sidebar</li>
+                                        <li>Right Sidebar</li>
+                                        <li>No Sidebar</li>
+
+                                    </ul>
+                                    <ul>
+                                        <li class="li-title font">Post Formats</li>
+                                        <li>Aside Format</li>
+                                        <li>Image Format</li>
+                                        <li>Gallery Format</li>
+                                        <li>Audio Format</li>                
+                                        <li>Quote Format</li>  
+                                        <li>Link Form</li>  
+                                    </ul>
+                  
+                                
+                                </div>
+                            </div>
+
+                        </li>
+                        <li><a href="#">SHOP <span class="lnr lnr-chevron-down"></span></a>
+                            <div class="navbar-extend extend-width">
+                                <div class="nav-flex">
+                                    <ul>
+                                        <li class="li-title  font">Blog Layout</li>
+                                        <li>Classic </li>
+                                        <li>Modern Listing</li>
+                                        <li>Grid</li>
+                                        <li>Masonry</li>                
+                                        <li>Justify</li>
+                               
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        
+                        </li>
                         <li><a href="#">CONTACTS</a></li>
                     </ul>
                    
