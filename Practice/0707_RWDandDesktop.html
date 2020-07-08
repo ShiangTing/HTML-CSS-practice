@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        
+        padding: 0;
+        line-height: none;}
+
+        #menu-control{
+            display: none;
+        }
+       
+        @media screen and (max-width: 767px) {
+            #menu-control{
+            display: none;
+        }
+            .logo-gp{
+            background-color: palevioletred;
+            padding: 10px;
+            position: relative;
+        }
+        .logo-gp .logo img{
+            vertical-align: middle;
+        }
+        .logo-gp .hb{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+
+        }
+        .nav{
+            position: fixed;
+            width: 80%;
+            height: calc(100% - 60px);
+            background-color: #ccc;
+        }
+        .nav a{
+            display: block;
+            text-decoration: none;
+            color: #000;
+            padding: 10px 20px;
+            border-bottom: 1px dotted #666;
+        }
+
+        #menu-control:checked ~ .main-header .nav{
+            left: 0;
+        }
+        }
+        @media screen and(min-width:768px ){
+            .main-header{
+                padding: 10px;
+                background-color: peru;
+                display: flex;
+                justify-content: space-between;
+
+            }
+            nav a + a{
+                
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-control">
+    <div class="main-header">
+        <div class="logo-gp">
+            <div class="logo">
+                <img src="https://picsum.photos/80/40/?random=1">
+            </div>
+            <label class="hb" for="menu-control"></label>
+        </div>
+
+    </div>
+    <nav class="nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+
+
+    </nav>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officiis, voluptatum exercitationem temporibus minus repellendus sint? Error cum officia architecto laboriosam nisi, ad dolorem vel beatae optio, eaque sapiente magnam temporibus ipsa asperiores, provident voluptatibus dolores pariatur ipsum fuga rem voluptas laborum! Molestias reprehenderit deserunt earum eos facere. Consectetur, exercitationem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officiis, voluptatum exercitationem temporibus minus repellendus sint? Error cum officia architecto laboriosam nisi, ad dolorem vel beatae optio, eaque sapiente magnam temporibus ipsa asperiores, provident voluptatibus dolores pariatur ipsum fuga rem voluptas laborum! Molestias reprehenderit deserunt earum eos facere. Consectetur, exercitationem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officiis, voluptatum exercitationem temporibus minus repellendus sint? Error cum officia architecto laboriosam nisi, ad dolorem vel beatae optio, eaque sapiente magnam temporibus ipsa asperiores, provident voluptatibus dolores pariatur ipsum fuga rem voluptas laborum! Molestias reprehenderit deserunt earum eos facere. Consectetur, exercitationem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officiis, voluptatum exercitationem temporibus minus repellendus sint? Error cum officia architecto laboriosam nisi, ad dolorem vel beatae optio, eaque sapiente magnam temporibus ipsa asperiores, provident voluptatibus dolores pariatur ipsum fuga rem voluptas laborum! Molestias reprehenderit deserunt earum eos facere. Consectetur, exercitationem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officiis, voluptatum exercitationem temporibus minus repellendus sint? Error cum officia architecto laboriosam nisi, ad dolorem vel beatae optio, eaque sapiente magnam temporibus ipsa asperiores, provident voluptatibus dolores pariatur ipsum fuga rem voluptas laborum! Molestias reprehenderit deserunt earum eos facere. Consectetur, exercitationem.</p>
+    
+</body>
+</html>

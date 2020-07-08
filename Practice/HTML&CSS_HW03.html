@@ -81,11 +81,64 @@
         .navbar {
             background-color: white;
             height: 100px;
-            /* position: sticky; */
+            position: relative;
             top: 0;
             z-index: 3;
         }
+        /* .nav-content li:nth-child(3) .navbar-extend{
+            display: block;
+        } */
+        .navbar-extend{
+            font-weight: normal;
+            position:absolute;
+            left: 150px;
+            top: 65px;
+            line-height: 2;
+          opacity: 0;
+          transition: 1s;
+          z-index: -100;
+        }
+        .navbar-extend .li-title{
+            font-size: 17px;
+            color: #4f4f4f;
 
+        }
+        .nav-content .nav-text{
+            display: flex;
+        }
+        .nav-text li:nth-child(3):hover .navbar-extend
+        {
+        opacity: 1;
+        z-index: 99;
+           /* display: block; */
+        }
+
+        
+        .navbox{
+            margin: 30px 15px 15px 15px;
+            display: flex;
+        }
+        .navbar-extend ul{
+      
+            border-left: 1px solid #A5A5A5 ; 
+            padding: 0px 60px 0px 30px;
+            margin: 20px 70px 20px 10px;
+        }
+        .navbar-extend li{
+            color: #a5a5a5;
+            font-size: 16px;
+        }
+        .navbar-extend ul:first-child{
+            border: transparent;
+        }
+        .nav-flex{
+            display: flex;
+            background-color: #ffffff;
+            margin-top: 20px;
+        }
+        .nav-content{
+            display: flex;
+        }
         .logo {
             align-items: center;
         }
@@ -109,14 +162,7 @@
             font-size: 14px;
             padding: 6px 10px;
         }
-/* 
-        .green {
-            height: 780px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 180px 0 180px 0;
-        } */
+
 
         .text {
             align-items: center;
@@ -165,11 +211,6 @@
 
         .btn-3 {
             background-color: #86AE34;
-            /* padding: 17px 20px;
-            width: fit-content;
-            text-align: center;
-            margin: 5px; */
-
             margin: 0 5px;
             display: flex;
             align-items: center;
@@ -461,6 +502,19 @@
         .text-2{
             font-size: 30px;
         }
+        
+        .navbar:matches() {
+            background-color: red;
+        } 
+
+        .lnr-chevron-down{
+            font-size: 12px;
+        }
+
+        /* .nav-bg:has(> .nav-content ) {
+            background-color: red;
+        } */
+        /* >a:nth-child(3):hover */
     </style>
 
 
@@ -494,16 +548,73 @@
                     <a href="#"><img src="assets2/asset0.png" alt=""></a>
                 </div>
                 <nav class="nav-content">
-                    <a href="#">HOME</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">FEATURES</a>
-                    <a href="#">BLOG</a>
-                    <a href="#">SHOP</a>
-                    <a href="#">CONTACTS</a>
+                    <ul class="nav-text">
+                        <li> <a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">FEATURES <span class="lnr lnr-chevron-down"></span></a>
+                            <div class="navbar-extend">
+                                <div class="nav-flex">
+                                    <ul>
+                                        <li class="li-title  font">Headers</li>
+                                        <li>Header Style1</li>
+                                        <li>Header Style2</li>
+                                        <li>Header Style3</li>
+                                        <li>Header Style4</li>                
+                                        <li>Header Style5</li>
+                                        <li>Header Style6</li>
+                                    </ul>
+                        
+                                    <ul>
+                                        <li class="li-title font">Footers</li>
+                                        <li>Footers Style1</li>
+                                        <li>Footers Style2</li>
+                                        <li>Footers Style3</li>
+                                        <li>Footers Style4</li>                
+                               
+                                    </ul>
+                                    <ul>
+                                        <li class="li-title font">Pages</li>
+                                        <li>Maintenance</li>
+                                        <li>Search Results</li>
+                                        <li>Typography</li>
+                                        <li>FAQ</li>                
+                                        <li>Page Not Found</li>  
+                                        <li>Documentation</li>  
+                                    </ul>
+                                    <ul>
+                                        <li class="li-title font">Pages</li>
+                                        <li>About</li>
+                                        <li>Search Results</li>
+                                        <li>Typography</li>
+                           
+                                    </ul>
+                                
+                                </div>
+                            </div>
+                        
+                        
+                        </li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">CONTACTS</a></li>
+                    </ul>
+                   
+                    
+             
+                       
+                
+                   
+
+                
+                    
+                    
                 </nav>
+                
             </div>
         </div>
+       
     </div>
+  
     <div class="leaves">
         <div class="bg" style="background-image: url(../Practice/assets2/asset36.png);">
             <div class="container">

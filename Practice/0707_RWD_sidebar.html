@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hb{
+            z-index: 99;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            display: block;
+            background-color: #000;
+            border-radius: 0%;
+            /* 動畫 */
+            transform: scale(1);
+         
+            transition: border-radius .2s,transform .2s .2s cubic-bezier(.47,1.75,.54,-0.56)
+        }
+        .hb span{
+            width: 32px;
+            height: 2px;
+            background-color: #fff;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .hb span:first-child{
+            transform: translateY(-6px);
+        }
+        .hb span:last-child{
+            transform: translateY(6px);
+        }
+        #menu-control{
+            display: none;
+        }
+        #menu-control:checked~.hb{
+            border-radius: 50%;
+            background-color: red;
+        }
+        #menu-control:checked~.hb span:nth-child(2){
+            display: none;
+        }
+
+        #menu-control:checked~.hb span:first-child{
+            transform: translateY(0px) rotate(45deg);
+            width: 28px;
+        }
+        #menu-control:checked~.hb span:last-child{
+            transform: translateY(0px) rotate(-45deg);
+            width: 28px;
+        }
+
+        nav{
+            position: fixed;
+            top: 0;
+            width: 30%;
+            height: cal(100vh - 60px);
+            bottom: 0;
+            left: -100px;
+            background-color: #000;
+            transition: left .4s .2s;
+            overflow: auto;
+        }
+        nav a{
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+        #menu-control:checked~nav{
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <input type="checkbox" name="" id="menu-control">
+    
+    <label class="hb" for="menu-control">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav>
+     
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+
+    </nav>
+</body>
+</html>

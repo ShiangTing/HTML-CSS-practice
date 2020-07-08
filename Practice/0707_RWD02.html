@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- calc(a - b)可協助運算寬度 但減號前後都要空格
+    @media screen的mw順序有差 
+    @media 裝置 and (條件一) and (條件二){執行內容}
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .item{
+            margin: 15px;
+        }
+        .item img{
+            width: 100%;
+        }
+        @media screen and (min-width: 768px) {
+            .box{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                max-width: 1300px;
+                border: 1px solid red;
+                margin: auto;
+            }
+            .item{
+                width: calc(50% - 30px);
+            }
+        }
+        
+        @media screen and (min-width: 992px) {
+     
+            .item{
+                width: calc(33.3% - 30px);
+            }
+        }
+        @media screen and (min-width: 1200px) {
+     
+            .item{
+                width: calc(16.6% - 30px);
+            }
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">
+        <img src="https://picsum.photos/300/200/?random=1">
+          <p>  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et similique dolores illum quasi repellat vel ipsam, earum consequuntur accusamus ratione officia a, nihil aut molestiae? Est, reiciendis. Labore, minus fugit?</p>
+        </div>
+        <div class="item"><img src="https://picsum.photos/300/200/?random=1">
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et similique dolores illum quasi repellat vel ipsam, earum consequuntur accusamus ratione officia a, nihil aut molestiae? Est, reiciendis. Labore, minus fugit?</p>
+        </div>
+        <div class="item"><img src="https://picsum.photos/300/200/?random=1">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et similique dolores illum quasi repellat vel ipsam, earum consequuntur accusamus ratione officia a, nihil aut molestiae? Est, reiciendis. Labore, minus fugit?</p>
+        </div>
+        <div class="item"><img src="https://picsum.photos/300/200/?random=1">
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et similique dolores illum quasi repellat vel ipsam, earum consequuntur accusamus ratione officia a, nihil aut molestiae? Est, reiciendis. Labore, minus fugit?</p>
+        </div>
+        <div class="item"><img src="https://picsum.photos/300/200/?random=1">
+          <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et similique dolores illum quasi repellat vel ipsam, earum consequuntur accusamus ratione officia a, nihil aut molestiae? Est, reiciendis. Labore, minus fugit?</p>
+        </div>
+        <div class="item"><img src="https://picsum.photos/300/200/?random=1">
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et similique dolores illum quasi repellat vel ipsam, earum consequuntur accusamus ratione officia a, nihil aut molestiae? Est, reiciendis. Labore, minus fugit?</p>
+        </div>
+    </div>
+</body>
+</html>
