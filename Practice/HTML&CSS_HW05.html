@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        * {
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+
+            /* color: white; */
+        }
+
+        #menu-control {
+            display: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            /* display: flex; */
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+
+
+        }
+
+        .banner {
+            width: 100%;
+            height: 50%;
+            /* position: absolute;
+            top: 0; */
+            z-index: -1;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            min-height: 507px;
+            height: 100%;
+        }
+
+        /* .swiper-slide{
+            width: 100%;
+            height: 100%;
+        } */
+        .picture {
+            width: 100%;
+            height: 80%;
+            min-height: 652px;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            /* position: absolute; */
+            text-align: center;
+            padding-bottom: 50px;
+            /* left: 38%;
+            top: 45%; */
+        }
+        .info{
+            color: black;
+        }
+
+
+        .space3{
+            justify-content:center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .space4{
+            justify-content:center;
+      
+            text-align: center;
+        }
+        .city{
+            height: 100%;
+            width: 100%;
+        }
+   
+
+        .item-icon{
+            width: 76px;
+            height: 49px;
+            background-color: white;
+            border: 6px solid black;
+        }
+        .slash{
+            /* width: 33px; */
+            width: 50px;
+            left: 30px;
+            height: 45px;
+            top: 20px;
+            position:relative;
+            border-bottom: red 6px solid;
+            transform: rotate(135deg);
+        }
+        .arrow{
+            /* position: absolute;
+            bottom: 0;
+            left: 10%; */
+            border-color: black transparent transparent transparent;
+            border-style: solid solid solid solid;
+            border-width: 15px 15px 0;
+            height: 0px;
+            width: 0px;
+        }
+
+        .item-gp{
+                padding: 30px 60px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+        .content{
+            line-height: 2;
+        }
+        .wrap{
+            width: 100%;
+            height: 126px;
+            background-color: #1E5799;
+            opacity: 0.8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .text p{
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0.15em;
+        }
+        .pic-3{
+            height: 113px;
+
+        }
+        .pic-3 img{
+            height: 100%;
+        }
+        @media screen and (max-width: 767px) {
+
+            .col-1 {
+                width: 8.33333333%;
+            }
+
+            .col-2 {
+                width: 16.666666%
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33333333%;
+            }
+
+            .col-5 {
+                width: 41.666666%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.333333%;
+            }
+
+            .col-8 {
+                width: 66.666666%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.333333%;
+            }
+
+            .col-11 {
+                width: 91.666666%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            /* .logo-gp
+        {padding: 10px;
+        position: relative;} */
+
+            .logo-gp .hb {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                right: -280px;
+                top: 10px;
+
+                background-color: tomato;
+                z-index: 99;
+            }
+
+
+            nav {
+                position: fixed;
+
+                width: 80%;
+                height: 100vh;
+                bottom: 0;
+                right: -367px;
+                background-color: #000;
+                transition: right 1s .2s;
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                font-size: 20px;
+                border-bottom: 1px solid grey;
+                /* width: 150px; */
+            }
+            .main-header{
+                position: absolute;
+                z-index: 100;
+            }
+
+            #menu-control:checked~.banner .navbar {
+                right: 0
+            }
+
+            #menu-control:checked~.main-header .hb {
+                background-color: transparent;
+                transform: scale(1.3);
+            }
+
+            #menu-control:checked~.main-header .hb span:nth-child(2) {
+                display: none;
+            }
+
+            #menu-control:checked~.main-header .hb span:first-child {
+                transform: translateY(0px) rotate(45deg);
+                color: black;
+                width: 28px;
+            }
+
+            #menu-control:checked~.main-header .hb span:last-child {
+                transform: translateY(0px) rotate(135deg);
+                color: black;
+                width: 28px;
+            }
+
+            .logo-text {
+                display: none;
+
+            }
+
+            .logo {
+                display: flex;
+                align-items: center;
+            }
+
+            .hb span {
+                width: 32px;
+                height: 2px;
+                background-color: #fff;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                transition: .3s;
+            }
+
+            .hb span:first-child {
+                transform: translateY(-8px);
+
+            }
+
+            .hb span:last-child {
+                transform: translateY(8px);
+            }
+
+            .title {
+
+                text-align: center;
+
+            }
+
+            .btn-gp {
+                /* position: absolute; */
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                /* left: 15%;
+                top: 50%; */
+
+            }
+
+            .btn {
+                padding: 10px 20px;
+                width: fit-content;
+                background-color: rgba(61, 155, 233, 0.6);
+                border: solid rgba(43, 104, 156, 1) 0px;
+                cursor: pointer;
+                margin: 10px 20px;
+            }
+
+            .space2 {
+                flex-direction: column;
+                align-items: center;
+            }
+            .item-icon{
+                position: relative;
+                /* left: 35%; */
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .col-lg-1 {
+                width: 8.33333333%;
+            }
+
+            .col-lg-2 {
+                width: 16.666666%
+            }
+
+            .col-lg-3 {
+                width: 25%;
+            }
+
+            .col-lg-4 {
+                width: 33.33333333%;
+            }
+
+            .col-lg-5 {
+                width: 41.666666%;
+            }
+
+            .col-lg-6 {
+                width: 50%;
+            }
+
+            .col-lg-7 {
+                width: 58.333333%;
+            }
+
+            .col-lg-8 {
+                width: 66.666666%;
+            }
+
+            .col-lg-9 {
+                width: 75%;
+            }
+
+            .col-lg-10 {
+                width: 83.333333%;
+            }
+
+            .col-lg-11 {
+                width: 91.666666%;
+            }
+
+            .col-lg-12 {
+                width: 100%;
+            }
+
+            .main-header {
+                position: absolute;
+                padding: 10px;
+                display: flex;
+                /* justify-content: space-between; */
+                background-color: transparent;
+                align-items: center;
+                position: absolute;
+                z-index: 99;
+    
+            flex-direction: column;
+        
+            }
+            .banner{
+                display: flex;
+                justify-content: center;
+            }
+
+            .navbar {
+                display: flex;
+                align-items: center;
+            }
+
+            .navbar a {
+                color: white;
+                padding: 0 10px;
+                font-size: 14px;
+            }
+
+            .nav-content li {
+                /* display: flex; */
+                padding: 0 10px;
+            }
+
+            .logo-text {
+                display: block;
+            }
+
+            .space {
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                width: fit-content;
+                background-color: rgba(61, 155, 233, 0.6);
+                border: solid rgba(43, 104, 156, 1) 0px;
+                cursor: pointer;
+                margin: 0 10px;
+            }
+
+            .btn-gp {
+                /* position: absolute; */
+                display: flex;
+                justify-content: center;
+                /* left: 25%;
+                top: 60%; */
+            }
+            .content{
+               text-align: left;
+               font-size: 15px;
+            }
+            .item-gp{
+                padding: 0 60px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            .pd-1{
+            padding-top: 80px;
+            padding-bottom: 30px;
+        }
+        .reverse{
+            flex-direction: row-reverse;
+        }
+        .list li{
+            text-align: left;
+         list-style-type: disc;
+        }
+        .list{
+            margin-left: 50px;
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $(".hb").click(function(){
+        //         // $(".navbar").css("right","0");
+        //         $(".navbar").animate({right:"0"})
+        //     })
+
+        // })
+        $(document).ready(function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                //    direction: 'horizontal',
+
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                // scrollbar: {
+                //     el: '.swiper-scrollbar',
+                //},
+            })
+        })
+    </script>
+    <input type="checkbox" name="" id="menu-control">
+
+
+    <div class="banner">
+
+        <div class="main-header">
+            <div class="container">
+                <div class="row space">
+                    <div class="logo-gp">
+                        <a class="logo"><img src="assets4/asset0.png" alt="">
+                            <span>Build School</span></a>
+                        <label class="hb" for="menu-control">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <div class="logo-text">developer career builder</div>
+                    </div>
+                    <nav class="navbar">
+                        <a href="#">台北班簡介</a>
+                        <a href="#">新竹班簡介</a>
+                        <a href="#">中華大學校內班簡介</a>
+                        <a href="#">Blog</a>
+                        <a href="#">歷屆老師</a>
+                        <a href="#">關於</a>
+                        <a href="#">問題及洽詢</a>
+                    </nav>
+                </div>
+            </div>
+           
+        </div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="picture" style="background-image: url(../Practice/assets4/asset1.png);">
+                        <div class="title">
+                            <h3>BUILD SCHOOL</h3>
+                            <p>Build School 是軟體開發教育的先鋒，為學生打造更有競爭力的職涯</p>
+                        </div>
+
+                        <div class="btn-gp">
+                            <div class="container">
+                                <div class="row space2">
+
+                                    <div class="btn">台北班簡介及報名(2020/10月後開課)</div>
+
+
+                                    <div class="btn"> 新竹班簡介(2020/12月後開課)</div>
+
+                                    <div class="btn"> 即刻報名 (中華大學學生)</div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="picture" style="background-image: url(../Practice/assets4/header2.png);"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="picture" style="background-image: url(../Practice/assets4/header3.png);"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="picture" style="background-image: url(../Practice/assets4/header4.png);">
+                        <div class="title">
+                            <h3>動手做出東西
+                                才能解決問題</h3>
+                            <p>BUILD SOMETHING AND SOLVE THE PROBLEM, THAT'S MY STYLE</p>
+                        </div>
+                        <div class="btn-gp">
+                            <div class="container">
+                                <div class="row space2">
+
+                                    <div class="btn">台北班簡介及報名(2020/10月後開課)</div>
+
+
+                                    <div class="btn"> 新竹班簡介(2020/12月後開課)</div>
+
+                                    <div class="btn"> 即刻報名 (中華大學學生)</div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="picture" style="background-image: url(../Practice/assets4/header5.png);">
+                        <div class="title">
+                            <h3>想搭上火箭? 
+                                門票是給想成為軟體工程師的你</h3>
+                            <p>BUILD SCHOOL - DEVELOPER CAREER BUILDER</p>
+                        </div>
+                        <div class="btn-gp">
+                            <div class="container">
+                                <div class="row space2">
+
+                                    <div class="btn">台北班簡介及報名(2020/10月後開課)</div>
+
+
+                                    <div class="btn"> 新竹班簡介(2020/12月後開課)</div>
+
+                                    <div class="btn"> 即刻報名 (中華大學學生)</div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="picture" style="background-image: url(../Practice/assets4/header6.png);">
+                      
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="picture" style="background-image: url(../Practice/assets4/header7.png);">
+                        <div class="title">
+                            <h3>這裏沒有考試
+                                只有滿滿的程式碼</h3>
+                            <p>NO TEST BUT YOUR CODES</p>
+                        </div>
+                    
+                    
+                        <div class="btn-gp">
+                            <div class="container">
+                                <div class="row space2">
+
+                                    <div class="btn">台北班簡介及報名(2020/10月後開課)</div>
+
+
+                                    <div class="btn"> 新竹班簡介(2020/12月後開課)</div>
+
+                                    <div class="btn">即刻報名 (中華大學學生)</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="picture" style="background-image: url(../Practice/assets4/header8.png);">
+                        <div class="title">
+                            <h3>這裏沒有考試
+                                只有滿滿的程式碼</h3>
+                            <p>NO TEST BUT YOUR CODES</p>
+                        </div>
+                    
+                    
+                        <div class="btn-gp">
+                            <div class="container">
+                                <div class="row space2">
+
+                                    <div class="btn">台北班簡介及報名(2020/10月後開課)</div>
+
+
+                                    <div class="btn"> 新竹班簡介(2020/12月後開課)</div>
+
+                                    <div class="btn">即刻報名 (中華大學學生)</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
+
+
+<div class="promo">
+    <div class="info pd-1">
+        <div class="container">
+            <div class="row space3">
+                <div class="col-lg-6 col-12">
+                <div class="item-gp ">
+                    <div class="item-icon">
+                       <div class="slash"></div>
+                       <div class="arrow"></div>
+                    </div>
+                    <div class="logo-title">
+                        <h3>Build School</h3>
+                        <h3>/*我們的理念*/</h3>
+    ​
+                    </div>
+                    <div class="content0">
+                        <p>Build = 將程式碼編譯及建置成可執行的軟體
+                        <p>Build = 動手做</p>
+                        <p>Build = 軟體開發職涯的打造者</p>
+                 
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-6  col-12">
+                    <div class="item-gp">
+                        <div class="item-pic">
+                            
+                        </div>
+                        <div class="logo-title">
+                            <h3>實作及就業導向的軟體開發學校</h3>
+                        </div>
+                        <div class="content">
+                            <p>因應數位新時代的來臨，軟體、App、IoT 、SaaS、雲端平台的應用需求大爆炸，軟體工程師的招募需求持續上升，以2016年5月求職平台的統計資料，從高科技、電商、金融、傳產、網路服務、軟體資訊、新創等各行業，台灣至少有 27,000 位軟體開發工程師的職缺，甚至日本、新加坡等軟體及App 外商也來台灣求才。
+                                為了彌補企業求才所需技能及實務教學上的落差，我們將前進校園，幫助想搭上軟體開發及互聯網經濟這艘火箭的同學們，打造更有競爭力的職涯!</p>
+                            
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="context pd-1">
+        <div class="container">
+            <div class="row space3 reverse">
+                <div class="col-lg-6 col-12">
+                    <div class="item-gp ">
+                        <div class="item-pic">
+                          <img src="assets4/5a71f2_2a410e14076f4a7b9326a915b4517bc8_mv2.webp" alt="">
+                        </div>
+                        <div class="logo-title">
+                            <h3>動手實作才是真學習</h3>
+                           
+        ​
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-lg-6  col-12">
+                    <div class="item-gp">
+                     
+                        <div class="logo-title">
+                            <h3>打造專案作品的學習方式</h3>
+                            <h3>(Project-based Learning)</h3>
+                        </div>
+                        <div class="content">
+                            <p>透過身經百戰的實務講師、各大企業的資深軟體工程師或CTO，帶領同學實作一個真正能運作的產品開發，解決真實世界的問題，透過專題過程中的實作，培養解決問題的能力，這裏不只是程式教學或教育訓練，學的不只是技能，而是 Learn how to learn，以因應變化多端的軟體開發技能，及自我尋找解答的能力。</p>
+                            
+                        </div>
+                    </div>
+                 </div>
+           
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div class="info2 pd-1">
+        <div class="container">
+            <div class="row space3">
+                <div class="col-lg-6 col-12">
+                    <div class="item-gp ">
+                        <div class="item-pic">
+                          <img src="assets4/5a71f2_2ec10b788bc94ab399d5493f29937b4e_mv2.webp" alt="">
+                        </div>
+                        <div class="logo-title">
+                            <h3>就業銜接</h3>
+                           
+        ​
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-lg-6  col-12">
+                    <div class="item-gp">
+                     
+                        <div class="logo-title">
+                            <h3>真正企業職場所需技能</h3>
+                            <h3>(Career Readiness)</h3>
+                        </div>
+                        <div class="content">
+                            <p>
+                                除了透過打造專題作品過程，學到了技術及硬技能外，不同於一般的軟體培訓，我們更加入了簡報技巧、履歷及面試準備、以及真正軟體開發的團隊溝通及運作，這些軟實力 (Soft-Skill) 的培養，讓同學能提早做好準備，在職場上成為一位專業的軟體工程師!</p>
+                            
+                        </div>
+                    </div>
+                 </div>
+           
+            </div>
+        </div>
+    </div>
+    <div class="context pd-1">
+        <div class="container">
+            <div class="row space3 reverse">
+                <div class="col-lg-6 col-12">
+                    <div class="item-gp ">
+                        <div class="item-pic">
+                          <img src="assets4/5a71f2_0f4c475255a540eeafdb78445852d7fe_mv2 (1).webp" alt="">
+                        </div>
+                        <div class="logo-title">
+                            <h3>連結及影響力</h3>
+                           
+        ​
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-lg-6  col-12">
+                    <div class="item-gp">
+                     
+                        <div class="logo-title">
+                            <h3>企業導師的連結</h3>
+                            <h3> (Mentor Network)</h3>
+                        </div>
+                        <div class="content">
+                            <p>每一位在軟體開發上有實務經驗的企業導師，他們是各大企業的主管、資深軟體工程師或 CTO，其人際連結及資源將帶給同學更多更好的就業機會，你將比別人站得更高，看得更遠!</p>
+                            
+                        </div>
+                    </div>
+                 </div>
+           
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<div class="city pd-1">
+        <div class="picture2" style="background-image: url(../Practice/assets4/5b7e139d046c40c1a1acde7162607721.webp);">
+            <div class="wrap">
+            <div class="text">
+                <p>18 - 24週的實作及作品開發 - 從訓練、就業、到企業連結</p>
+            </div>
+        </div>
+        </div>
+
+    </div>
+</div>
+    <div class="info2 pd-1">
+        <div class="container">
+            <div class="row space4">
+                <div class="col-lg-3 col-12">
+                    <div class="item">
+                    
+                        <div class="time">
+                            <h3>第 1 - 4 個月</h3></div>
+                        <div class="pic-3">
+                            <img src="assets4/comouter.png" alt="">
+                        </div>
+                        <div class="slogan">
+                            <h3>程式基礎教學
+                            </h3>
+
+<!-- 
+                            <div class="list2">
+                                <div>業界實戰講師</div>
+                                <div>企業主管/創業家/CTO 演講</div>
+                            </div> -->
+                            <ul class="list">
+                                <li>業界實戰講師</li>
+                                <li>企業主管/創業家/CTO 演講</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="col-lg-3 col-12">
+                    <div class="item">
+                    
+                        <div class="time">
+                            <h3>第 5 - 6 個月</h3>
+                        </div>
+                        <div class="pic-3"> <img src="assets4/light.png" alt=""></div>
+                        <div class="slogan">
+                            <h3>作品導向實作
+                            </h3>
+                            
+<!-- 
+                            <div class="list2">
+                                <div>業界實戰講師</div>
+                                <div>企業主管/創業家/CTO 演講</div>
+                                <div>團隊開發 - 真實軟體開發團隊的運作及分工 (Agile 敏捷, kanban 看板, CI 自動化建置 ...)</div>
+                             
+                            </div> -->
+                            <ul class="list">
+                                <li>Web / App 作品開發 - 企業導師指導</li>
+                                <li>不只是 Demo - 真實可運作成果</li>
+                                <li>團隊開發 - 真實軟體開發團隊的運作及分工 (Agile 敏捷, kanban 看板, CI 自動化建置 ...)</li>
+                            </ul>
+                        </div>
+
+                   
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="item">
+                        <div class="time">
+                            <h3>第 6 - 7 個月</h3>
+                        </div>
+                        <div class="pic-3">    <img src="assets4/reward.png" alt=""></div>
+                        <div class="slogan">
+                            <h3>作品導向實作</h3>
+
+                            <ul class="list">
+                                <li>簡報及溝通技巧</li>
+                                <li>作品及程式碼講解</li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="item">
+                        <div class="time">
+                            <h3>第 6 - 7 個月</h3>
+                        </div>
+                        <div class="pic-3">    <img src="assets4/9f34614e8922485da75285918bc07a85.webp" alt=""></div>
+                        <div class="slogan">
+                            <h3>作品導向實作</h3>
+                            <ul class="list">
+                                <li>就業媒合或未來職涯諮詢</li>
+                                <li>企業導師 -人際連結及資源</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+<div class="city pd-1">
+        <div class="picture2" style="background-image: url(../Practice/assets4/5b7e139d046c40c1a1acde7162607721.webp);">
+            <div class="wrap">
+            <div class="text">
+                <p>18 - 24週的實作及作品開發 - 從訓練、就業、到企業連結</p>
+            </div>
+        </div>
+        </div>
+
+    </div>
+</div>
+    <div class="context">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <div class="corp"></div>
+    <footer></footer>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="dist/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+  $(".owl-carousel").owlCarousel({ 
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+      responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        768:{
+            items:2,
+            nav:false
+        },
+        1200:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }});
+});
+</script>
+<div class="slider">
+    <div class="owl-carousel  owl-theme">
+        <div><img src="https://picsum.photos/1300/300/?random=1"></div>
+        <div><img src="https://picsum.photos/1300/300/?random=5"></div>
+        <div><img src="https://picsum.photos/1300/300/?random=6"></div>
+        <div><img src="https://picsum.photos/1300/300/?random=12"></div>
+        <div><img src="https://picsum.photos/1300/300/?random=11"></div>
+        <div><img src="https://picsum.photos/1300/300/?random=10"></div>
+    </div>
+<!-- 
+    <div class="owl-carousel owl-theme owl-loaded">
+        <div class="owl-stage-outer">
+            <div class="owl-stage">
+                <div class="owl-item"><img src="https://picsum.photos/1300/300/?random=2"></div>
+                <div class="owl-item"><img src="https://picsum.photos/1300/300/?random=3"></div>
+                <div class="owl-item"><img src="https://picsum.photos/1300/300/?random=4"></div>
+                <div class="owl-item"><img src="https://picsum.photos/1300/300/?random=4"></div>
+                <div class="owl-item"><img src="https://picsum.photos/1300/300/?random=4"></div>
+            </div>
+        </div> -->
+
+        <!-- <div class="owl-nav">
+            <div class="owl-prev">prev</div>
+            <div class="owl-next">next</div>
+        </div>
+        <div class="owl-dots">
+            <div class="owl-dot active"><span></span></div>
+            <div class="owl-dot"><span></span></div>
+            <div class="owl-dot"><span></span></div>
+        </div>
+    </div> -->
+
+
+
+
+
+</body>
+</html>

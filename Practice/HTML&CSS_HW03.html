@@ -426,7 +426,7 @@
         }
 
         .content {
-            margin-top: 250px;
+
             text-align: center;
             color: #FFFFFF;
         }
@@ -469,6 +469,7 @@
 
         .img-fruit {
             width: 50%;
+            position: relative;
         }
 
         .img-fruit img {
@@ -536,10 +537,21 @@
             font-size: 12px;
         }
 
-        /* .nav-bg:has(> .nav-content ) {
-            background-color: red;
-        } */
-        /* >a:nth-child(3):hover */
+        .border-box{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 500px;
+            height: 300px;
+            border: 1px solid #ffffff;
+            opacity: 0;
+            transition: .5s;
+        }
+        .img-fruit:hover .border-box{
+            left: 50px;
+            top: 10px;
+            opacity: 1;
+        }
     </style>
 
 
@@ -674,12 +686,6 @@
                         </li>
                         <li><a href="#">CONTACTS</a></li>
                     </ul>
-                   
-                    
-             
-                       
-                
-                   
 
                 
                     
@@ -751,6 +757,9 @@
         <div class="container">
             <div class="img-fruit">
                 <a href="#"><img src="assets2/asset4.png" alt=""></a>
+                <div class="border-box">
+
+                </div>
             </div>
 
             <div class="img-fruit">
