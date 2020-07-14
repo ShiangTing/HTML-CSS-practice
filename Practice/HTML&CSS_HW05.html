@@ -210,6 +210,9 @@
             color: white;
            
         }
+        .pic-6 img{
+            height: 60%;
+        }
         .corp{
             width: 100%;
            
@@ -301,7 +304,7 @@
                 width: 60%;
                 height: 100vh;
                 bottom: 0;
-                right: -367px;
+                right: -460px;
                 background-color: #fff;
                 transition: right 1s .2s;
                 text-align: center;
@@ -444,10 +447,170 @@
 
 
 
-        @media screen and {
+        @media (min-width: 768px) and (max-width: 979px) {
+            .col-md-1{width: 8.33333333%;}
+            .col-md-2{ width: 16.666666%}
+            .col-md-3{width: 25%;}
+            .col-md-4{width: 33.33333333%;}
+
+            .col-md-5{width: 41.666666%;}
+            .col-md-6{width: 50%;}
+            .col-md-7{width: 58.333333%; }
+            .col-md-8{ width: 66.666666%;}
+            .col-md-9{ width: 75%;}
+            .col-md-10{width: 83.333333%;}
+            .col-md-11{ width: 91.666666%;}
+            .col-md-12{width:100%;}
             
+            .logo-gp .hb {
+                position: fixed;
+                width: 40px;
+                height: 40px;
+                right: 0;
+                top: 20px;
+
+                background-color: black;
+                z-index: 99;
+            }
+
+            .item-gp{
+                padding: 15px 60px;
+            }
+            nav.navbar {
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 60%;
+                height: 100vh;
+                bottom: 0;
+                right: -600px;
+                background-color: #fff;
+                transition: right 1s .2s;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            nav a {
+                display: block;
+                color: #000000;
+                text-decoration: none;
+                padding: 10px 20px;
+                font-size: 25px;
+                border-bottom: 1px solid grey;
+                /* width: 150px; */
+            }
+          
+            .main-header{
+                position: absolute;
+                width: 100%;
+                z-index: 100;
+                padding: 20px 0 ;
+            }
+
+          
+
+            #menu-control:checked~.banner .navbar {
+                right: 0;
+                top: -10;
+            }
+
+            #menu-control:checked~.banner .hb {
+                background-color: transparent;
+                transform: scale(1.3);
+            }
+
+            #menu-control:checked~.banner .hb span:nth-child(2) {
+                display: none;
+            }
+
+            #menu-control:checked~.banner .hb span:first-child {
+                transform: translateY(0px) rotate(45deg);
+                background-color: black;
+                width: 28px;
+            }
+
+            #menu-control:checked~.banner .hb span:last-child {
+                transform: translateY(0px) rotate(135deg);
+                background-color: black;
+                width: 28px;
+            }
+
+            .logo-text {
+                display: none;
+              
+            }
+            .build{
+                font-size: 19px;
+            }
+
+            .logo {
+                display: flex;
+                align-items: center;
+               padding:0 0 0 15px;
+            }
+
+            .hb span {
+                width: 32px;
+                height: 2px;
+                background-color: #fff;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                transition: .3s;
+            }
+
+            .hb span:first-child {
+                transform: translateY(-8px);
+
+            }
+
+            .hb span:last-child {
+                transform: translateY(8px);
+            }
+
+            .title {
+
+                text-align: center;
+
+            }
+
+            .btn-gp {
+                /* position: absolute; */
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                /* left: 15%;
+                top: 50%; */
+
+            }
+      
+           
+
+            .btn {
+                padding: 10px 20px;
+                width: fit-content;
+                background-color: rgba(61, 155, 233, 0.6);
+                border: solid rgba(43, 104, 156, 1) 0px;
+                cursor: pointer;
+                margin: 10px 20px;
+            }
+
+        
+            .space2 {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+        
+        
+        
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 980px) {
             .col-lg-1 {
                 width: 8.33333333%;
             }
@@ -597,13 +760,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        // $(document).ready(function(){
-        //     $(".hb").click(function(){
-        //         // $(".navbar").css("right","0");
-        //         $(".navbar").animate({right:"0"})
-        //     })
+        $(document).ready(function(){
+            // $(".hb").click(function(){
+            //     // $(".navbar").css("right","0");
+            //     $(".navbar").animate({right:"0"})
+            // })
+            $(window).scroll(function(){
+                // var heights = $(body).height()-$(window).height()
+                if ($(window).scrollTop()>50){
+                    $(".hb").fadeOut();
+                  
+                }
+                if($(window).scrollTop()<=49){
+                    $(".hb").fadeIn();
+                }
+                
+            })
 
-        // })
+            $(".hb").click(function(){
+                console.log($(".navbar").offset().left);
+                if($(".navbar").offset().left>600){
+                    $('html, body').css({
+                        overflow: 'hidden',
+                        height: '100%'
+                    });
+                };
+                if($(".navbar").offset().left<600){
+                    $('html, body').css({
+                    overflow: 'auto',
+                    height: 'auto'
+                    });
+                }
+
+            })
+
+        })
         $(document).ready(function () {
             var mySwiper = new Swiper('.swiper-container', {
                 // Optional parameters
@@ -981,7 +1172,7 @@
     <div class="info2 pd-1">
         <div class="container">
             <div class="row space4">
-                <div class="col-lg-3 col-12">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="item">
                     
                         <div class="time">
@@ -1009,7 +1200,7 @@
 
                 </div>
 
-                <div class="col-lg-3 col-12">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="item">
                     
                         <div class="time">
@@ -1038,7 +1229,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-12">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="item">
                         <div class="time">
                             <h3>第 6 - 7 個月</h3>
@@ -1058,7 +1249,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-12">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="item">
                         <div class="time">
                             <h3>第 7 - 8 個月</h3>
@@ -1111,7 +1302,7 @@
 <div class="info2 pd-1">
     <div class="container">
         <div class="row space4">
-            <div class="col-lg-3 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
                 <div class="item">
                 <div class="pic-6">
                     <div class="pic-5">
@@ -1138,7 +1329,7 @@
 
             </div>
 
-            <div class="col-lg-3 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
                 <div class="item">
                     <div class="pic-6">
                     <div class="pic-5"> <img src="assets4/mv2.webp" alt="">
@@ -1162,7 +1353,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-3 col-12">
+            <div class="col-lg-3  col-md-6 col-12">
                 <div class="item">
 
                     <div class="pic-6">   
@@ -1184,7 +1375,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-3 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
                 <div class="item">
                     
                     <div class="pic-6">  
