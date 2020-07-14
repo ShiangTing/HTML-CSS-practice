@@ -11,8 +11,8 @@
         * {
             text-decoration: none;
             list-style: none;
-            font-family: sans-serif;
-
+    
+            font-family:  "Microsoft JhengHei" , sans-serif;
             /* color: white; */
         }
 
@@ -141,12 +141,27 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          padding: 10px;
+          box-sizing: border-box;
+        }
+        .wrap2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img{
+            width: 80%;
+        }
+        .build{
+            white-space: nowrap;
+            font-size: 30px;
         }
         .text p{
             color: white;
             font-size: 20px;
             font-weight: bold;
             letter-spacing: 0.15em;
+            
         }
         .pic-3{
             height: 113px;
@@ -154,6 +169,46 @@
         }
         .pic-3 img{
             height: 100%;
+        }
+        .pic-6{
+            height: 230px;
+        }
+        .pic-5{
+            height: 50%; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .item{
+            padding: 0 25px;
+        }
+        .footer{
+            width: 100%;
+            background-color: lightgrey;
+            border-top: 6px darkgray solid;
+        }
+
+        .pd-1{
+            padding: 50px 0;
+        }
+        .stn{
+            line-height: 1.5;
+        }
+        .content-2{
+            line-height: 1.5;
+            text-align: left;
+        }
+        .slogan{
+            padding-top: 30px;
+        }
+        .logo-text{
+            font-size: 12px;
+            padding-left: 70px;
+        }
+        .logo ,.title ,.btn,.logo-text{
+            color: white;
+           
         }
         @media screen and (max-width: 767px) {
 
@@ -213,15 +268,17 @@
                 position: absolute;
                 width: 40px;
                 height: 40px;
-                right: -280px;
-                top: 10px;
+                right: 0;
+                top: 20px;
 
                 background-color: tomato;
                 z-index: 99;
             }
 
-
-            nav {
+            .item-gp{
+                padding: 15px 60px;
+            }
+            nav.navbar {
                 position: fixed;
 
                 width: 80%;
@@ -244,29 +301,32 @@
             }
             .main-header{
                 position: absolute;
+                width: 100%;
                 z-index: 100;
+                padding: 20px 0 ;
             }
 
             #menu-control:checked~.banner .navbar {
-                right: 0
+                right: 0;
+                top: -10;
             }
 
-            #menu-control:checked~.main-header .hb {
+            #menu-control:checked~.banner .hb {
                 background-color: transparent;
                 transform: scale(1.3);
             }
 
-            #menu-control:checked~.main-header .hb span:nth-child(2) {
+            #menu-control:checked~.banner .hb span:nth-child(2) {
                 display: none;
             }
 
-            #menu-control:checked~.main-header .hb span:first-child {
+            #menu-control:checked~.banner .hb span:first-child {
                 transform: translateY(0px) rotate(45deg);
                 color: black;
                 width: 28px;
             }
 
-            #menu-control:checked~.main-header .hb span:last-child {
+            #menu-control:checked~.banner .hb span:last-child {
                 transform: translateY(0px) rotate(135deg);
                 color: black;
                 width: 28px;
@@ -274,12 +334,16 @@
 
             .logo-text {
                 display: none;
-
+              
+            }
+            .build{
+                font-size: 19px;
             }
 
             .logo {
                 display: flex;
                 align-items: center;
+               padding:0 0 0 15px;
             }
 
             .hb span {
@@ -320,6 +384,8 @@
                 top: 50%; */
 
             }
+      
+           
 
             .btn {
                 padding: 10px 20px;
@@ -391,6 +457,7 @@
 
             .main-header {
                 position: absolute;
+                padding: 20px ;
                 padding: 10px;
                 display: flex;
                 /* justify-content: space-between; */
@@ -472,7 +539,7 @@
          list-style-type: disc;
         }
         .list{
-            margin-left: 50px;
+            margin-left: 40px;
         }
 
         }
@@ -523,15 +590,25 @@
             <div class="container">
                 <div class="row space">
                     <div class="logo-gp">
+                      <div class="wrap2">
+                        <div class="col-lg-6">
                         <a class="logo"><img src="assets4/asset0.png" alt="">
-                            <span>Build School</span></a>
+                        
+                        </div>
+                     
+                        <div class="col-lg-6">
+                            <div class="build">Build School</div>
+                        </div>
+                        </div>
+                            <!-- <span>Build School</span></a> -->
                         <label class="hb" for="menu-control">
                             <span></span>
                             <span></span>
                             <span></span>
                         </label>
                         <div class="logo-text">developer career builder</div>
-                    </div>
+                        </div>
+                        
                     <nav class="navbar">
                         <a href="#">台北班簡介</a>
                         <a href="#">新竹班簡介</a>
@@ -550,7 +627,7 @@
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                    <div class="picture" style="background-image: url(../Practice/assets4/asset1.png);">
+                    <div class="picture" style="background-image: url(../assets4/asset1.png);">
                         <div class="title">
                             <h3>BUILD SCHOOL</h3>
                             <p>Build School 是軟體開發教育的先鋒，為學生打造更有競爭力的職涯</p>
@@ -577,13 +654,13 @@
 
                 </div>
                 <div class="swiper-slide">
-                    <div class="picture" style="background-image: url(../Practice/assets4/header2.png);"></div>
+                    <div class="picture" style="background-image: url(../assets4/header2.png);"></div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="picture" style="background-image: url(../Practice/assets4/header3.png);"></div>
+                    <div class="picture" style="background-image: url(../assets4/header3.png);"></div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="picture" style="background-image: url(../Practice/assets4/header4.png);">
+                    <div class="picture" style="background-image: url(../assets4/header4.png);">
                         <div class="title">
                             <h3>動手做出東西
                                 才能解決問題</h3>
@@ -607,7 +684,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="picture" style="background-image: url(../Practice/assets4/header5.png);">
+                    <div class="picture" style="background-image: url(../assets4/header5.png);">
                         <div class="title">
                             <h3>想搭上火箭? 
                                 門票是給想成為軟體工程師的你</h3>
@@ -631,12 +708,12 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="picture" style="background-image: url(../Practice/assets4/header6.png);">
+                    <div class="picture" style="background-image: url(../assets4/header6.png);">
                       
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="picture" style="background-image: url(../Practice/assets4/header7.png);">
+                    <div class="picture" style="background-image: url(../assets4/header7.png);">
                         <div class="title">
                             <h3>這裏沒有考試
                                 只有滿滿的程式碼</h3>
@@ -662,7 +739,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="picture" style="background-image: url(../Practice/assets4/header8.png);">
+                    <div class="picture" style="background-image: url(../assets4/header8.png);">
                         <div class="title">
                             <h3>這裏沒有考試
                                 只有滿滿的程式碼</h3>
@@ -844,7 +921,7 @@
 
 </div>
 <div class="city pd-1">
-        <div class="picture2" style="background-image: url(../Practice/assets4/5b7e139d046c40c1a1acde7162607721.webp);">
+        <div class="picture2" style="background-image: url(../assets4/5b7e139d046c40c1a1acde7162607721.webp);">
             <div class="wrap">
             <div class="text">
                 <p>18 - 24週的實作及作品開發 - 從訓練、就業、到企業連結</p>
@@ -966,29 +1043,198 @@
         </div>
 
 
-
+        <!-- C:\BuildSchoolSample\Html&CSS\Practice\assets4 -->
 
 
     </div>
 <div class="city pd-1">
-        <div class="picture2" style="background-image: url(../Practice/assets4/5b7e139d046c40c1a1acde7162607721.webp);">
-            <div class="wrap">
-            <div class="text">
-                <p>18 - 24週的實作及作品開發 - 從訓練、就業、到企業連結</p>
-            </div>
-        </div>
+        <div class="picture2" style="background-image: url('../assets4/5b7e139d046c40c1a1acde7162607721.webp');">
+            
+                <div class="wrap">
+                <div class="text">
+                <p>在課程及作品實作中，將採用這些工具 - 熟悉實務上軟體開發團隊的運作、分工及真實專案的流程  </p>
+
+                </div>
+             </div>
+       
         </div>
 
     </div>
 </div>
-    <div class="context">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
+<div class="info2 pd-1">
+    <div class="container">
+        <div class="row space4">
+            <div class="col-lg-3 col-12">
+                <div class="item">
+                <div class="pic-6">
+                    <div class="pic-5">
+                        <img src="assets4/5a71f2_868f17332f214b9d86734bf26e59940a_mv2.webp" alt="">
+                    
+                   
+                    </div>
+                    <div class="pic-5">
+                        <img src="assets4/5a71f2_c6c8344c1efd4032a1231408aa6b6c37_mv2.webp" alt="">
+                    </div>
+                </div>
+                    <div class="slogan">
+                        <h3>版本控管及程式碼管理
+                        </h3>
+                        <div class="content-2">學員之練習及作品之程式碼，皆採用主流的 git 當版本控管，熟悉版控的各種操作及實務專案運用; 課程中公開之練習程式碼，提交至 GitHub 上，其它學員可參考或供講師 Code Review 檢閱，並熟悉 Open Source 生態及工具</div>
+                        <!-- <ul class="list">
+                            <li>學員之練習及作品之程式碼，皆採用主流的 git 當版本控管，熟悉版控的各種操作及實務專案運用; 課程中公開之練習程式碼，提交至 GitHub 上，其它學員可參考或供講師 Code Review 檢閱，並熟悉 Open Source 生態及工具</li>
+                          
+                        </ul> -->
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            <div class="col-lg-3 col-12">
+                <div class="item">
+                    <div class="pic-6">
+                    <div class="pic-5"> <img src="assets4/mv2.webp" alt="">
+                  
+                    </div>
+                    <div class="pic-5">  <img src="assets4/mv3.webp" alt=""></div>
+                </div>
+                    <div class="slogan">
+                        <h3>作品開發及團隊管理
+                        </h3>
+                        <div class="content-2">
+                            除了使用 GitHub 外，專題開發階段也將使用 Microsoft Azure DevOps Services (原名Visual Studio Team Services) 進行團隊開發、包括程式碼管理、工作項目追蹤、自動化建置等，熟悉一個軟體開發專案之流程、分工及日常工作。
+
+                           
+                        </div>
+                        <div class="content-2"> 也可透過目前許多開發團隊常用的專案管理及看板工具 - Trello，進行工作分派、追蹤、或整個班的工作事項管理</div>
+                  
+                    </div>
+
+               
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-12">
+                <div class="item">
+
+                    <div class="pic-6">   
+                        <div class="pic-5">      <img src="assets4/azure.png" alt=""></div>
+                        <div class="pic-5">   <img src="assets4/sql.png" alt=""></div>
+                     
+                        </div>
+                    <div class="slogan">
+                        <h3>雲端平台及服務</h3>
+
+                        <div class="content-2">
+                            雲端平台的使用已逐漸成為一個成熟軟體開發團隊之基礎，並讓開發、測試、佈署工作更加的便利及自動化。因此學員將使用 Microsoft Azure 當成作品及專案應用系統執行的雲端平台，包括 Azure App Service 建立網站服務、Azure SQL Database 建立資料庫服務
+
+                           
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-12">
+                <div class="item">
+                    
+                    <div class="pic-6">  
+                        <div class="pic-5"> <img src="assets4/slack.png" alt=""></div> 
+                        <div class="pic-5"><img src="assets4/Msteams.png" alt=""></div>
+                        
+                        </div>
+                    <div class="slogan">
+                        <h3>團隊溝通協作及通知
+                        </h3>
+                        <div class="content-2">
+                            課程過程中的線上討論、遠端溝通、或技術分享，將可透過 Microsoft Teams 或Slack 工具。另外練習的程式碼提交至 GitHub、或是 Trello 上的工作狀態更新，或是 Azure DevOps 上自動化建置的狀態，皆可發通知至 Microsoft Teams 或 Slack，透過自動化提升工作效率，並熟悉一個軟體開發團隊的協同合作
+
+                           
+                        </div>
+                    </div>
+
 
                 </div>
 
 
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <!-- C:\BuildSchoolSample\Html&CSS\Practice\assets4 -->
+
+
+</div>
+<div class="city pd-1">
+    <div class="picture2" style="background-image: url('../assets4/5b7e139d046c40c1a1acde7162607721.webp');">
+        <div class="wrap">
+        <div class="text">
+            <p>我們的講師及企業導師擁有在這些公司的工作經歷、擔任主管或資深工程師 </p>
+        </div>
+    </div>
+    </div>
+
+</div>
+</div>
+    <div class="corp">
+        <div class="container">
+            <div class="row space3">
+                <div class="col-lg-3 col-12">
+                <div class="item-corp">
+                    <img src="assets4/MS.webp" alt="">
+                  
+                </div>
+                </div>
+            <div class="col-lg-3 col-12">
+                    <div class="item-corp">
+                        <img src="assets4/kingston.webp" alt="">
+                    </div>
+                    </div>
+            <div class="col-lg-3 col-12">
+                <div class="item-corp">
+                    <img src="assets4/kerrywebp.webp" alt="">
+                 
+                </div>
+            </div>
+            <div class="col-lg-3 col-12">
+                <div class="item-corp">
+                    <img src="assets4/skill.webp" alt="">
+                </div>
+             </div>
+             <div class="col-lg-3 col-12">
+                <div class="item-corp">
+                    <img src="assets4/twmvc.webp" alt="">
+                </div>
+             </div>
+             <div class="col-lg-3 col-12">
+                <div class="item-corp">                
+                    <img src="assets4/trend.webp" alt="">
+                </div>
+             </div>
+             <div class="col-lg-3 col-12">
+                <div class="item-corp">
+                    <img src="assets4/gama.webp" alt="">
+     
+                </div>
+             </div>
+             <div class="col-lg-3 col-12">
+                <div class="item-corp">
+                    <img src="assets4/leopard.webp" alt="">
+       
+                </div>
+             </div>
 
 
             </div>
@@ -997,10 +1243,59 @@
 
 
 
-
     </div>
-    <div class="corp"></div>
-    <footer></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="row pd-1">
+                <div class="col-lg-6 col-12">
+                    <div class="footer-item">
+
+                        <div class="text-3">
+                            <h3>聯絡方式</h3>
+
+                            <div class="stn">
+                                <span class="email"> </span>
+                                contact@build-school.com
+                            </div>
+                            <div class="stn">
+                                <span class="tel"> </span>
+                                02-66057606
+                            </div>
+                            <div class="stn">
+                                <span class="add-1"></span>
+                                ​台北: 台北市忠孝東路三段96號11F-1 (台北科大對面/忠孝新生站3號出口)
+                            </div>
+                            <div class="stn">
+                                <span class="add-2"></sapn>
+                                新竹: 中華大學行政大樓圖資處
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="footer-item">
+                        <div class="text-3"><h3>合作及接洽</h3>
+                        <p>有興趣軟體工程師徵才、或成為我們的講師或擔任指導學生的企業導師 (Inspire Mentor)，請與我們連絡</p>
+                        </div>
+                    </div>
+                 
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+    </footer>
 
 
 
