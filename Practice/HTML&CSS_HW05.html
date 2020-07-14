@@ -13,12 +13,14 @@
             list-style: none;
     
             font-family:  "Microsoft JhengHei" , sans-serif;
+           
             /* color: white; */
         }
 
         #menu-control {
             display: none;
         }
+      
 
         .container {
             width: 100%;
@@ -199,9 +201,7 @@
             line-height: 1.5;
             text-align: left;
         }
-        .slogan{
-            padding-top: 30px;
-        }
+   
         .logo-text{
             font-size: 12px;
             padding-left: 70px;
@@ -210,6 +210,21 @@
             color: white;
            
         }
+        .corp{
+            width: 100%;
+           
+        }
+        .item-corp{
+            padding: 10px 0;
+        }
+        .corp img{
+            width: 60%;
+        } 
+        .info2{
+        box-sizing: border-box;
+        width: 100%;
+        }
+  
         @media screen and (max-width: 767px) {
 
             .col-1 {
@@ -265,13 +280,13 @@
         position: relative;} */
 
             .logo-gp .hb {
-                position: absolute;
+                position: fixed;
                 width: 40px;
                 height: 40px;
                 right: 0;
                 top: 20px;
 
-                background-color: tomato;
+                background-color: black;
                 z-index: 99;
             }
 
@@ -280,24 +295,29 @@
             }
             nav.navbar {
                 position: fixed;
-
-                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 60%;
                 height: 100vh;
                 bottom: 0;
                 right: -367px;
-                background-color: #000;
+                background-color: #fff;
                 transition: right 1s .2s;
                 text-align: center;
             }
 
             nav a {
                 display: block;
-                color: #fff;
+                color: #000000;
                 text-decoration: none;
                 padding: 10px 20px;
-                font-size: 20px;
+                font-size: 25px;
                 border-bottom: 1px solid grey;
                 /* width: 150px; */
+            }
+            nav a::after{
+
             }
             .main-header{
                 position: absolute;
@@ -305,6 +325,8 @@
                 z-index: 100;
                 padding: 20px 0 ;
             }
+
+          
 
             #menu-control:checked~.banner .navbar {
                 right: 0;
@@ -322,13 +344,13 @@
 
             #menu-control:checked~.banner .hb span:first-child {
                 transform: translateY(0px) rotate(45deg);
-                color: black;
+                background-color: black;
                 width: 28px;
             }
 
             #menu-control:checked~.banner .hb span:last-child {
                 transform: translateY(0px) rotate(135deg);
-                color: black;
+                background-color: black;
                 width: 28px;
             }
 
@@ -400,12 +422,31 @@
                 flex-direction: column;
                 align-items: center;
             }
+            .item{
+                padding: 50px 30px;
+            }
             .item-icon{
                 position: relative;
-                /* left: 35%; */
+           
+            }
+            .pic-6{
+                height: 210px;
+            }
+            .list{
+                text-align: left;
+                padding-left: 125px;
+                line-height: 1.5;
+            }
+            .pd-2{
+                padding: 50px;
             }
         }
 
+
+
+        @media screen and {
+            
+        }
         @media screen and (min-width: 768px) {
             .col-lg-1 {
                 width: 8.33333333%;
@@ -455,6 +496,7 @@
                 width: 100%;
             }
 
+
             .main-header {
                 position: absolute;
                 padding: 20px ;
@@ -493,7 +535,9 @@
             .logo-text {
                 display: block;
             }
-
+            .title{
+                box-sizing: border-box;
+            }
             .space {
                 width: 100%;
                 justify-content: space-around;
@@ -540,6 +584,9 @@
         }
         .list{
             margin-left: 40px;
+        }
+        .slogan{
+            padding-top: 30px;
         }
 
         }
@@ -1014,7 +1061,7 @@
                 <div class="col-lg-3 col-12">
                     <div class="item">
                         <div class="time">
-                            <h3>第 6 - 7 個月</h3>
+                            <h3>第 7 - 8 個月</h3>
                         </div>
                         <div class="pic-3">    <img src="assets4/9f34614e8922485da75285918bc07a85.webp" alt=""></div>
                         <div class="slogan">
