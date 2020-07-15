@@ -228,6 +228,10 @@
         box-sizing: border-box;
         width: 100%;
         }
+        .list li{
+                list-style-type:  disc;
+            }
+        
   
         @media screen and (max-width: 767px) {
 
@@ -301,28 +305,34 @@
                 position: fixed;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-evenly;
+                justify-content: center;
                 width: 60%;
                 height: 100vh;
                 bottom: 0;
                 right: -460px;
                 background-color: #fff;
                 transition: right 1s .2s;
-                text-align: center;
+          
+                align-items: center;
             }
 
             nav a {
                 display: block;
                 color: #000000;
                 text-decoration: none;
+                text-align: center;
                 padding: 10px 20px;
                 font-size: 25px;
                 border-bottom: 1px solid grey;
+            
+                width: 50%;
+
                 /* width: 150px; */
             }
-            nav a::after{
-
+            nav a:nth-child(1){
+                border-bottom: transparent;
             }
+          
             .main-header{
                 position: absolute;
                 width: 100%;
@@ -443,9 +453,7 @@
                 line-height: 1.5;
             }
 
-            .list li{
-                list-style-type:  disc;
-            }
+         
             .pd-2{
                 padding: 50px;
             }
@@ -486,25 +494,33 @@
                 position: fixed;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-evenly;
+                justify-content: center;
                 width: 60%;
                 height: 100vh;
                 bottom: 0;
-                right: -600px;
+                right: -560px;
                 background-color: #fff;
                 transition: right 1s .2s;
                 text-align: center;
+                align-items: center;
                 overflow: hidden;
             }
 
             nav a {
-                display: block;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
                 color: #000000;
                 text-decoration: none;
-                padding: 10px 20px;
+                padding: 20px 0;
                 font-size: 25px;
+            
                 border-bottom: 1px solid grey;
+                width: 50%;
                 /* width: 150px; */
+            }
+            nav a:nth-child(1){
+                border-bottom: transparent;
             }
           
             .main-header{
@@ -611,8 +627,25 @@
                 flex-direction: column;
                 align-items: center;
             }
-        
-        
+            .pic-6{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+            .pic-6 img{
+                height: auto;
+            }
+            .pic-5{
+                height: auto;
+            }
+            .list{
+                text-align: left;
+                padding-left: 65px;
+            
+                line-height: 1.5;
+            }
+
         
         
         }
@@ -754,12 +787,10 @@
         .reverse{
             flex-direction: row-reverse;
         }
-        .list li{
-            text-align: left;
-         list-style-type: disc;
-        }
+
         .list{
             margin-left: 40px;
+            text-align: left;
         }
         .slogan{
             padding-top: 30px;
@@ -1071,7 +1102,7 @@
                 <div class="col-lg-6 col-12">
                     <div class="item-gp ">
                         <div class="item-pic">
-                          <img src="assets4/5a71f2_2a410e14076f4a7b9326a915b4517bc8_mv2.webp" alt="">
+                          <img src="assets4/man.png" alt="">
                         </div>
                         <div class="logo-title">
                             <h3>動手實作才是真學習</h3>
@@ -1107,7 +1138,7 @@
                 <div class="col-lg-6 col-12">
                     <div class="item-gp ">
                         <div class="item-pic">
-                          <img src="assets4/5a71f2_2ec10b788bc94ab399d5493f29937b4e_mv2.webp" alt="">
+                          <img src="assets4/profile.png" alt="">
                         </div>
                         <div class="logo-title">
                             <h3>就業銜接</h3>
@@ -1140,7 +1171,7 @@
                 <div class="col-lg-6 col-12">
                     <div class="item-gp ">
                         <div class="item-pic">
-                          <img src="assets4/5a71f2_0f4c475255a540eeafdb78445852d7fe_mv2 (1).webp" alt="">
+                          <img src="assets4/rocket.png" alt="">
                         </div>
                         <div class="logo-title">
                             <h3>連結及影響力</h3>
@@ -1171,7 +1202,7 @@
 
 </div>
 <div class="city pd-1">
-        <div class="picture2" style="background-image: url(../assets4/5b7e139d046c40c1a1acde7162607721.webp);">
+        <div class="picture2" style="background-image: url(./assets4/longpicture.png);">
             <div class="wrap">
             <div class="text">
                 <p>18 - 24週的實作及作品開發 - 從訓練、就業、到企業連結</p>
@@ -1266,7 +1297,7 @@
                         <div class="time">
                             <h3>第 7 - 8 個月</h3>
                         </div>
-                        <div class="pic-3">    <img src="assets4/9f34614e8922485da75285918bc07a85.webp" alt=""></div>
+                        <div class="pic-3">    <img src="assets4/bestchoice.png" alt=""></div>
                         <div class="slogan">
                             <h3>作品導向實作</h3>
                             <ul class="list">
@@ -1298,7 +1329,7 @@
 
     </div>
 <div class="city pd-1">
-        <div class="picture2" style="background-image: url('../assets4/5b7e139d046c40c1a1acde7162607721.webp');">
+        <div class="picture2" style="background-image: url('./assets4/longpicture.png');">
             
                 <div class="wrap">
                 <div class="text">
@@ -1318,12 +1349,12 @@
                 <div class="item">
                 <div class="pic-6">
                     <div class="pic-5">
-                        <img src="assets4/5a71f2_868f17332f214b9d86734bf26e59940a_mv2.webp" alt="">
+                        <img src="assets4/git.png" alt="">
                     
                    
                     </div>
                     <div class="pic-5">
-                        <img src="assets4/5a71f2_c6c8344c1efd4032a1231408aa6b6c37_mv2.webp" alt="">
+                        <img src="assets4/gitcat.png" alt="">
                     </div>
                 </div>
                     <div class="slogan">
@@ -1344,10 +1375,10 @@
             <div class="col-lg-3 col-md-6 col-12">
                 <div class="item">
                     <div class="pic-6">
-                    <div class="pic-5"> <img src="assets4/mv2.webp" alt="">
+                    <div class="pic-5"> <img src="assets4/mv2.png" alt="">
                   
                     </div>
-                    <div class="pic-5">  <img src="assets4/mv3.webp" alt=""></div>
+                    <div class="pic-5">  <img src="assets4/mv3.png" alt=""></div>
                 </div>
                     <div class="slogan">
                         <h3>作品開發及團隊管理
@@ -1428,7 +1459,7 @@
 
 </div>
 <div class="city pd-1">
-    <div class="picture2" style="background-image: url('../assets4/5b7e139d046c40c1a1acde7162607721.webp');">
+    <div class="picture2" style="background-image: url('./assets4/longpicture.png');">
         <div class="wrap">
         <div class="text">
             <p>我們的講師及企業導師擁有在這些公司的工作經歷、擔任主管或資深工程師 </p>
@@ -1470,7 +1501,7 @@
              </div>
              <div class="col-lg-3 col-12">
                 <div class="item-corp">                
-                    <img src="assets4/trend.webp" alt="">
+                    <img src="assets4/trend.png" alt="">
                 </div>
              </div>
              <div class="col-lg-3 col-12">
